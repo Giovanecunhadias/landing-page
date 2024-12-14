@@ -3,9 +3,9 @@
 "use client"
 import React, { useState } from "react"
 import { CircleUserRound } from "lucide-react"
-import Link from "next/link"
+import Link from "next/link" 
 import Home from "../page"
-export default function Nav(){
+export default function Nav() {
     const [isOpen, setIsOpen] = useState(false)
     const buttonClasses = 'text-gray-100 font-bold text-sm px-2 py-1 border-2 border-gray-100 hover:bg-gray-100 hover:text-gray-800 rounded-lg trasition duration-300'
     const navClasses = 'flex border rounded-2xl px-5 py-1 gray-100 flex items-center' 
