@@ -77,7 +77,7 @@ export default function Start(){
                 </div>
             </div>  
             {/*INTEGRAÇÕES*/}
-            <div className=" flex flex-col gap-2 bg-indigo-400  justify-center items-center bg-[#1F073B]">
+            <div style={{backgroundColor: '#1f073b'}} className=" flex flex-col gap-2 bg-indigo-400  justify-center items-center  mb-20">
                 <div style={{backgroundColor: 'rgba(217, 61, 141, 0.5)'}} className="mt-10 rounded-full w-28">
                     <p className="font-faktum text-center text-[#d93d8d]">Integrações</p>
                 </div>
@@ -92,6 +92,13 @@ export default function Start(){
 
 
                 
+            </div>
+            {/*PERFOMANCE*/}
+            <div className="flex flex-col gap-4 justify-center items-center">
+                <div style={{ backgroundColor: 'rgba(95, 194, 238, 0.5)'}} className="rounded-full w-28 text-center">
+                        <span className="font-faktum text-[#5fc2ee]">PERFOMANCE</span>
+                </div>
+                <p className="font-faktum text-5xl ">Tecnologia para <span className="text-[#5fc2ee]">economizar o seu tempo</span></p>
             </div>
             
         </>
