@@ -2,6 +2,8 @@
 import { ArrowRight, MoveRight } from "lucide-react"
 import Image from "next/image"
 import phone from '@/app/assets/image/phone.png'
+
+import AnimatedGrid from "./animations/line-animatiion"
 export default function Start(){
     const arrowColor = '#D93D8D'
 
@@ -100,6 +102,7 @@ export default function Start(){
                 </div>
                 <p className="font-faktum text-5xl ">Tecnologia para <span className="text-[#5fc2ee]">economizar o seu tempo</span></p>
             </div>
+            {/*DEPOIMENTOS*/}
             <div className="flex flex-col gap-2 justify-center items-center">
                 <div style={{backgroundColor: 'rgba(217, 61, 141, 0.5)'}} className="rounded-full w-auto text-center ">
                     <span className="font-faktum text-[#d93d8d]">DEPOIMENTOS</span>
@@ -109,6 +112,7 @@ export default function Start(){
             <div style={{backgroundColor: '#1F073B'}}className="">
                 
             </div>
+            <AnimatedGrid/>
             
         </>
     )
