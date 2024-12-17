@@ -100,6 +100,15 @@ export default function Start(){
                 </div>
                 <p className="font-faktum text-5xl ">Tecnologia para <span className="text-[#5fc2ee]">economizar o seu tempo</span></p>
             </div>
+            <div className="flex flex-col gap-2 justify-center items-center">
+                <div style={{backgroundColor: 'rgba(217, 61, 141, 0.5)'}} className="rounded-full w-auto text-center ">
+                    <span className="font-faktum text-[#d93d8d]">DEPOIMENTOS</span>
+                </div>
+                <p className="text-5xl font-faktum"> + de 6 milhões de notas emitidas</p>
+            </div>
+            <div style={{backgroundColor: '#1F073B'}}className="">
+                
+            </div>
             
         </>
     )
