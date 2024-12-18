@@ -3,6 +3,7 @@ import { ArrowRight, MoveRight } from "lucide-react"
 import Image from "next/image"
 import phone from '@/app/assets/image/phone.png'
 import AnimatedGrid from "./animations/line-animatiion"
+import Plans from "./plans"
 export default function Start(){
     const arrowColor = '#D93D8D'
 
@@ -112,7 +113,7 @@ export default function Start(){
                 
             </div>
             <AnimatedGrid/>
-            
+            <Plans/>
         </>
     )
 }
