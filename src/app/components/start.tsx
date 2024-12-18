@@ -2,7 +2,6 @@
 import { ArrowRight, MoveRight } from "lucide-react"
 import Image from "next/image"
 import phone from '@/app/assets/image/phone.png'
-
 import AnimatedGrid from "./animations/line-animatiion"
 export default function Start(){
     const arrowColor = '#D93D8D'
