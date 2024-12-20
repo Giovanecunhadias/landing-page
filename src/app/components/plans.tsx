@@ -1,5 +1,5 @@
 'use client'
-import { Sparkle, Check,X } from "lucide-react"
+import { Sparkle, Check,X, MoveRight } from "lucide-react"
 {/*
   
 <div className='flex flex-col items-center justify-center mb-8'>
@@ -24,14 +24,26 @@ export default function Plans() {
           <p className="text-[#1f073b] text-center font-faktum text-3xl mb-3">R$ 711 <span className="text-sm">/ano</span></p>
           <p className="text-[#1f073b] font-bold font-faktum text-center mb-2">1.800 notas /ano</p>
           <p className="text-gray-500 font-faktum text-center">R$ 0,58 por nota adicional</p>
-          <div className="text-sm">
+          <div className="text-sm ml-20">
             <p className="text-[#02b16a] flex flex-row items-center"><Check />Taxa de adesão grátis</p>
             <p className="flex flex-row items-center text-[1f073b]"><Check color="#02b16a"/>+ de 30 Integrações</p>
             <p className="text-[#ef6e50] flex flex-row items-center"><X />Split de notas fiscais</p>
             <p className="text-[#1f073b] flex flex-row items-center "><Check color="#02b16a"/>Suporte à Dropshipping</p>
-            <p className="text">Fechamento mensal</p>
+            <p className="text-[#1f073b] flex flex-row items-center"><Check color="#02b16a"/>Fechamento mensal</p>
+            <p className="text-[#1f073b] flex flex-row items-center"><Check size={34}color="#02b16a"/>Cadastro de CNPJ com preenchimento automático.</p>
+            <p className="text-[#1f073b] flex flex-row items-center"><Check size={34}color="#02b16a"/>Importação de vendas retroativas   (máx. 500)</p>
+            <p className="text-[#1f073b] flex flex-row items-center"><Check color="#02b16a"/>Suporte via WhatsApp, chat e e-mail</p>
+            <p className="text-[#ef6e50] flex flex-row items-center"><X />Acesso à API</p>
+            <p className="text-[#ef6e50] flex flex-row items-center"><X/>Onboarding assistido</p>
+            <p className="text-[#ef6e50] flex flex-row items-center"><X></X>Atendimento prioritário com especialista</p>
+            <p className="text-[#ef6e50] flex flex-row items-center"><X/>Apoio técnico para integração</p>
           </div>
-          
+          <div className="flex justify-center items-center mt-3">
+            <button className=" text-[#d93d8d] py-2 px-4 rounded flex items-center gap-2">
+              Começar <MoveRight strokeWidth={1} />
+            </button>
+          </div>
+
 
         </div>
         <div>2</div>
