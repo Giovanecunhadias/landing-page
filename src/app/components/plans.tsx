@@ -28,7 +28,8 @@ export default function Plans() {
             <p className="text-[#02b16a] flex flex-row items-center"><Check />Taxa de adesão grátis</p>
             <p className="flex flex-row items-center text-[1f073b]"><Check color="#02b16a"/>+ de 30 Integrações</p>
             <p className="text-[#ef6e50] flex flex-row items-center"><X />Split de notas fiscais</p>
-            <p className="text-[1f073b] "><Check color="#02b16a"/>Suporte à Dropshipping</p>
+            <p className="text-[#1f073b] flex flex-row items-center "><Check color="#02b16a"/>Suporte à Dropshipping</p>
+            <p className="text">Fechamento mensal</p>
           </div>
           
 
