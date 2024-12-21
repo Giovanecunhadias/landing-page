@@ -130,7 +130,7 @@ function PlanCard({ title, originalPrice, price, notes, additionalNotePrice, fea
           MAIS VENDIDO
         </div>
       )}
-      <div className={`text-center mb-4 ${isEnterprise? 'bg-[#0f0d0f] -mx-6 -mt-6 pt-6 pb-4 ': ''}${isMostSold ? 'bg-[#d93d8d] -mx-6 -mt-6 pt-6 pb-4 rounded-t-lg' : ''}}`}>
+      <div className={`text-center rounded-t-lg mb-4 ${isEnterprise? 'bg-[#0f0d0f] -mx-6 -mt-6 pt-6 pb-4 ': ''}${isMostSold ? 'bg-[#d93d8d] -mx-6 -mt-6 pt-6 pb-4 ' : ''}}`}>
         <p className={`text-center font-bold font-faktum flex items-center justify-center ${isEnterprise? 'text-white': isMostSold ? 'text-[#1f073b]' : 'text-[#1f073b]'}`}>
           <Sparkle className={`${isEnterprise || isMostSold ? 'fill-[#ffbc00]' : 'fill-[#d93d8d]'}`} color={isEnterprise||isMostSold ? "#ffbc00" : "#d93d8d"} />PLANO
         </p>
