@@ -1,5 +1,5 @@
 'use client'
-import { Sparkle, Check,X, MoveRight } from "lucide-react"
+import { Sparkle, Check,X, MoveRight, Undo2 } from "lucide-react"
 {/*
   
 <div className='flex flex-col items-center justify-center mb-8'>
@@ -15,7 +15,7 @@ import { Sparkle, Check,X, MoveRight } from "lucide-react"
 
 export default function Plans() {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center mt-20">
       <div className="h-56 grid grid-cols-3 gap-4 content-around">
         <div className="rounded-full">
           <p className="text-center font-bold font-faktum text-[#1f073b] flex items-center justify-center"><Sparkle className="fill-[#d93d8d]" color="#d93d8d"/>PLANO</p>
@@ -42,11 +42,48 @@ export default function Plans() {
             <button className=" text-[#d93d8d] py-2 px-4 rounded flex items-center gap-2">
               Começar <MoveRight strokeWidth={1} />
             </button>
+            
           </div>
-
-
+          <div className="flex justify-center flex-row items-center">
+            <p className="text-[#1f073b] flex flex-row items-center text-sm"><Undo2 size={16} strokeWidth={1} /> 30 dias para pedir reembolso</p>
+          </div>
         </div>
-        <div>2</div>
+        <div className="border rounded rounded-xl border-[#d93d8d] flex flex-col items-center relative">
+          <div className="bg-[#1f073b] text-white rounded-full text-center w-28 text-xs font-faktum mx-auto absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-1/2">
+              MAIS VENDIDO
+            </div>
+            <div className=" flex flex-col items-center bg-[#d93d8d] w-full rounded-xl border-b border-[#d93d8d] h-auto text-center " >
+              <p className="flex flex-row mt-3 font-faktum text-center font-bold text-[#1f073b] ">
+                <Sparkle color="#ffbc00" fill="#ffbc00" />
+                PLANO
+              </p>
+              <p className="font-faktum text-white text-3xl">Avançado</p>
+            </div>
+            <p className="line-through text-gray-500 text-sm mt-2">R$ 2.028,00</p>
+            <p className="text-[#d93d8d] text-3xl font-faktum">R$ 1.521 <span className="text-sm">/ano</span></p>
+            <p className="text-[#d93d8d] font-bold font-faktum text-center text-sm mt-2">7.200 notas /ano</p>
+            <p className="text-sm text-gray-500 mt-2">R$ 0,38 por nota adicional</p>
+            <div className="text-sm ml-20">
+            <p className="text-[#02b16a] flex flex-row items-center"><Check />Taxa de adesão grátis</p>
+            <p className="flex flex-row items-center text-[#1f073b]"><Check color="#02b16a"/>+ de 30 Integrações</p>
+            <p className="text-[#1f073b] flex flex-row items-center"><Check color="#02b16a" />Split de notas fiscais</p>
+            <p className="text-[#1f073b] flex flex-row items-center "><Check color="#02b16a"/>Suporte à Dropshipping</p>
+            <p className="text-[#1f073b] flex flex-row items-center"><Check color="#02b16a"/>Fechamento mensal</p>
+            <p className="text-[#1f073b] flex flex-row items-center"><Check size={34}color="#02b16a"/>Cadastro de CNPJ com preenchimento automático.</p>
+            <p className="text-[#1f073b] flex flex-row items-center"><Check size={34}color="#02b16a"/>Importação de vendas retroativas   (máx 1.000)</p>
+            <p className="text-[#1f073b] flex flex-row items-center"><Check color="#02b16a"/>Suporte via WhatsApp, chat e e-mail</p>
+            <p className="text-[#ef6e50] flex flex-row items-center"><Check color="#02b16a"/>Acesso à API</p>
+            <p className="text-[#ef6e50] flex flex-row items-center"><X/>Onboarding assistido</p>
+            <p className="text-[#ef6e50] flex flex-row items-center"><X></X>Atendimento prioritário com especialista</p>
+            <p className="text-[#ef6e50] flex flex-row items-center"><X/>Apoio técnico para integração</p>
+          </div>
+          <div className="flex justify-center items-center mt-3">
+            <button className=" text-[#d93d8d] py-2 px-4 rounded flex items-center gap-2">
+              Começar <MoveRight strokeWidth={1} />
+            </button>
+          </div>
+        </div>
+        
         <div>3</div>
       </div>
     </div>
