@@ -124,22 +124,30 @@ interface PlanCardProps {
 
 function PlanCard({ title, originalPrice, price, notes, additionalNotePrice, features, isMostSold = false, isEnterprise = false }: PlanCardProps) {
   return (
-    <div className={`rounded-xl p-6 flex flex-col h-full ${isMostSold ? 'border-2 border-[#d93d8d] relative' : ''}`}>
+    <div className={`rounded-xl p-6 flex flex-col h-full ${isEnterprise ? 'border-2 border-[#0f0d0f] relative' : ''}${isMostSold ? 'border-2 border-[#d93d8d] relative' : ''}`}>
       {isMostSold && (
         <div className="bg-[#1f073b] text-white rounded-full text-center w-28 text-xs font-faktum mx-auto absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-1/2 py-1">
           MAIS VENDIDO
         </div>
       )}
-      <div className={`text-center mb-4 ${isEnterprise? 'bg-[#0f0d0f] -mx-6 -mt-6 pt-6 pb-4 rounded-t-lg': ''}${isMostSold ? 'bg-[#d93d8d] -mx-6 -mt-6 pt-6 pb-4 rounded-t-lg' : ''}}`}>
-        <p className={`text-center font-bold font-faktum flex items-center justify-center ${isMostSold ? 'text-[#1f073b]' : 'text-[#1f073b]'}`}>
+      <div className={`text-center mb-4 ${isEnterprise? 'bg-[#0f0d0f] -mx-6 -mt-6 pt-6 pb-4 ': ''}${isMostSold ? 'bg-[#d93d8d] -mx-6 -mt-6 pt-6 pb-4 rounded-t-lg' : ''}}`}>
+        <p className={`text-center font-bold font-faktum flex items-center justify-center ${isEnterprise? 'text-white': isMostSold ? 'text-[#1f073b]' : 'text-[#1f073b]'}`}>
           <Sparkle className={`${isEnterprise || isMostSold ? 'fill-[#ffbc00]' : 'fill-[#d93d8d]'}`} color={isEnterprise||isMostSold ? "#ffbc00" : "#d93d8d"} />PLANO
         </p>
-        <p className={`font-faktum text-2xl md:text-3xl ${isMostSold ? 'text-white' : 'text-[#1f073b]'}`}>{title}</p>
+        <p className={`font-faktum text-2xl md:text-3xl ${isEnterprise? 'text-white': isMostSold ? 'text-white' : 'text-[#1f073b]'}`}>{title}</p>
       </div>
       {!isEnterprise && originalPrice && (
         <p className="line-through text-gray-500 text-center text-sm">R$ {originalPrice}</p>
       )}
-      <p className={`${isMostSold ? 'text-[#d93d8d]' : 'text-[#1f073b]'} text-center font-faktum text-2xl md:text-3xl mb-2`}>
+      <p className={`${
+  isEnterprise 
+    ? 'text-gray-500 text-sm' 
+    : isMostSold 
+      ? 'text-[#d93d8d]' 
+      : 'text-[#1f073b]'
+} text-center font-faktum ${
+  isEnterprise ? '' : 'text-2xl md:text-3xl'
+} mb-2`}>
         {isEnterprise ? price : `R$ ${price}`}
         {!isEnterprise && <span className="text-sm"> /ano</span>}
       </p>
