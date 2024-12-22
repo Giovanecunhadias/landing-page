@@ -4,6 +4,7 @@ import Image from "next/image"
 import phone from '@/app/assets/image/phone.png'
 import AnimatedGrid from "./animations/line-animatiion"
 import Plans from "./plans"
+import InfinityList from "./infinity_list"
 export default function Start(){
     const arrowColor = '#D93D8D'
 
@@ -114,6 +115,7 @@ export default function Start(){
             </div>
             <AnimatedGrid/>
             <Plans/>
+            <InfinityList/>
         </>
     )
 }

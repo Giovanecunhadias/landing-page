@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-
+import tailwindcssAnimated from 'tailwindcss-animated';
 export default {
     darkMode: ["class"],
     content: [
@@ -10,7 +10,8 @@ export default {
   theme: {
   	extend: {
   		animation: {
-  			bounce: 'bounce 1.5s infinite'
+  			bounce: 'bounce 1.5s infinite',
+			'infinite-scroll': 'infinite-scroll 25s linear infinite',
   		},
   		keyframes: {
   			bounce: {
@@ -20,7 +21,11 @@ export default {
   				'50%': {
   					transform: 'translateY(-10px)'
   				}
-  			}
+  			},
+			'infinite-scroll': {
+				from: { transform: 'translateX(0)' },
+				to: { transform: 'translateX(-100%)' },
+			},
   		},
   		colors: {
   			background: 'hsl(var(--background))',
@@ -77,7 +82,6 @@ export default {
   	}
   },
   plugins: [
-    require('tailwindcss-animated'),
-      require("tailwindcss-animate")
-],
+	tailwindcssAnimated
+  ],
 } satisfies Config;

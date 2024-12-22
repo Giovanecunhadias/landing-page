@@ -1,5 +1,5 @@
 'use client'
-import { Sparkle, Check, MoveRight, Undo2 } from 'lucide-react'
+import { Sparkle, Check, MoveRight, Undo2, X } from 'lucide-react'
 
 export default function Plans() {
   return (
@@ -156,8 +156,12 @@ function PlanCard({ title, originalPrice, price, notes, additionalNotePrice, fea
       <div className="text-sm space-y-2 mb-4 flex-grow">
         {features.map((feature, index) => (
           <p key={index} className="flex items-center text-[#1f073b]">
-            <Check color="#02b16a" size={20} />
-            <span className="ml-2">{feature.text}</span>
+            {feature.available ? (
+              <Check color="#02b16a" size={20} />
+            ) : (
+              <X color="#d93d8d" size={20} />
+            )}
+            <span className={`ml-2 ${feature.available ? '' : 'text-gray-500'}`}>{feature.text}</span>
           </p>
         ))}
       </div>
