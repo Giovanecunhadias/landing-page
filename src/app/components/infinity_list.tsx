@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-
+import { Sparkle } from "lucide-react";
 function InfinityList() {
   const logosRef = useRef(null);
 
@@ -18,31 +18,38 @@ function InfinityList() {
     >
       <ul
         ref={logosRef}
-        className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+        className="flex font-faktum text-[#1f073b] text-5xl items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
       >
         <li>
-          <p>Name</p>
+          <p>Afiliados</p>
         </li>
+        <Sparkle color="#d93d8d" fill="#d93d8d" size={40}/>
         <li>
-          <p>Name</p>
+          <p>ERP's</p>
         </li>
+        <Sparkle color="#d93d8d" fill="#d93d8d" size={40}/>
         <li>
-          <p>Name</p>
+          <p>Coprodutores</p>
         </li>
+        <Sparkle color="#d93d8d" fill="#d93d8d" size={40}/>
         <li>
-          <p>Name</p>
+          <p>Dropshipping</p>
         </li>
+        <Sparkle color="#d93d8d" fill="#d93d8d" size={40}/>
         <li>
-          <p>Name</p>
+          <p>Recorrência</p>
         </li>
+        <Sparkle color="#d93d8d" fill="#d93d8d" size={40}/>
         <li>
-          <p>Name</p>
+          <p>Negócios Digitais</p>
         </li>
+        <Sparkle color="#d93d8d" fill="#d93d8d" size={40}/>
         <li>
-          <p>Name</p>
+          <p>Infoprodutores</p>
         </li>
+        <Sparkle color="#d93d8d" fill="#d93d8d" size={40}/>
         <li>
-          <p>Name</p>
+          <p>SaaS</p>
         </li>
       </ul>
     </div>
