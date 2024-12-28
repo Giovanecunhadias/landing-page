@@ -4,14 +4,14 @@
 import React, { useState } from "react"
 import { CircleUserRound } from "lucide-react"
 import Link from "next/link" 
-import Home from "../page"
+
 export default function Nav() {
     const [isOpen, setIsOpen] = useState(false)
     const buttonClasses = 'text-gray-100 font-bold text-sm px-2 py-1 border-2 border-gray-100 hover:bg-gray-100 hover:text-gray-800 rounded-lg trasition duration-300'
     const navClasses = 'flex border rounded-2xl px-5 py-1 gray-100 flex items-center' 
     const startNow = 'bg-indigo-600 border rounded-2xl font-bold'
     const navStartNow = 'bg-indigo-600 border rounded-2xl font-bold items-center p-2 mx-8'
-    const navClassLinksCenter = ''
+    
     const buttons = (
         <>
             <button className={buttonClasses}>Preços</button>
@@ -43,7 +43,7 @@ export default function Nav() {
         </>
     )
     return(
-        <nav className="bg-gray-800 text-white w-full ">
+        <nav className="bg-gray-800 text-white w-full fixed ">
             <div className="max-w-7x1 mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex flex-row w-full justify-between">

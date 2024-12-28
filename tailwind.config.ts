@@ -11,7 +11,9 @@ export default {
   	extend: {
   		animation: {
   			bounce: 'bounce 1.5s infinite',
-			'infinite-scroll': 'infinite-scroll 25s linear infinite',
+  			'infinite-scroll': 'infinite-scroll 25s linear infinite',
+  			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out'
   		},
   		keyframes: {
   			bounce: {
@@ -22,10 +24,30 @@ export default {
   					transform: 'translateY(-10px)'
   				}
   			},
-			'infinite-scroll': {
-				from: { transform: 'translateX(0)' },
-				to: { transform: 'translateX(-100%)' },
-			},
+  			'infinite-scroll': {
+  				from: {
+  					transform: 'translateX(0)'
+  				},
+  				to: {
+  					transform: 'translateX(-100%)'
+  				}
+  			},
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
+  				}
+  			}
   		},
   		colors: {
   			background: 'hsl(var(--background))',
