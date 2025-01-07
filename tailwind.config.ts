@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 import tailwindcssAnimated from 'tailwindcss-animated';
 export default {
@@ -11,9 +12,12 @@ export default {
   	extend: {
   		animation: {
   			bounce: 'bounce 1.5s infinite',
-  			'infinite-scroll': 'infinite-scroll 25s linear infinite',
+  			'infinite-scroll': 'infinite-scroll 30s linear infinite',
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+			draw: 'draw 2.5s linear',
+			'infinite-scroll-horizontal':'infinite-scroll 1s linear infinite'
+			
   		},
   		keyframes: {
   			bounce: {
@@ -30,8 +34,12 @@ export default {
   				},
   				to: {
   					transform: 'translateX(-100%)'
-  				}
+  				},
   			},
+			'infinite-scroll-horizontal':{
+				from:{ transform: 'translateX(0)' },
+				to:{ transform: 'translateX(-100%)' }
+			},
   			'accordion-down': {
   				from: {
   					height: '0'
@@ -47,7 +55,15 @@ export default {
   				to: {
   					height: '0'
   				}
-  			}
+			},
+			draw: {
+				'0%':{
+					strokeDashoffset: '300'
+				},
+				'100%':{
+					strokeDashoffset: '0'
+				}
+			},
   		},
   		colors: {
   			background: 'hsl(var(--background))',
