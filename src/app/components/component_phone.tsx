@@ -14,7 +14,7 @@ const Mockup = () => {
           alt="phone" 
           className="block w-auto h-[700px]" 
         />
-
+        
         {/* Notificações e SVGs */}
         <div className="absolute inset-0 flex flex-col items-center justify-center space-y-6">
           {/* Notificação 1 */}

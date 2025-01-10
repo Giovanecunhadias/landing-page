@@ -13,6 +13,8 @@ import Integrations from './Integrations'
 import Proposal from './proposal'
 import Rodape from './rodape'
 import InfiniteScroll from './scrollhorizontalanimation'
+import Marquee from '@/components/ui/marquee'
+
 
 export default function Start() {
     const arrowColor = '#D93D8D'
@@ -20,6 +22,7 @@ export default function Start() {
     return (
         <>
             <Nav />
+            
             <InfiniteScroll/>
             <WhatsappButton/>
             

@@ -15,9 +15,10 @@ export default {
   			'infinite-scroll': 'infinite-scroll 30s linear infinite',
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out',
-			draw: 'draw 2.5s linear',
-			'infinite-scroll-horizontal':'infinite-scroll 1s linear infinite'
-			
+  			draw: 'draw 2.5s linear',
+  			'infinite-scroll-horizontal': 'infinite-scroll 25s linear infinite',
+  			marquee: 'marquee var(--duration) infinite linear',
+  			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite'
   		},
   		keyframes: {
   			bounce: {
@@ -34,12 +35,16 @@ export default {
   				},
   				to: {
   					transform: 'translateX(-100%)'
-  				},
+  				}
   			},
-			'infinite-scroll-horizontal':{
-				from:{ transform: 'translateX(0)' },
-				to:{ transform: 'translateX(-100%)' }
-			},
+  			'infinite-scroll-horizontal': {
+  				from: {
+  					transform: 'translateX(0)'
+  				},
+  				to: {
+  					transform: 'translateX(-100%)'
+  				}
+  			},
   			'accordion-down': {
   				from: {
   					height: '0'
@@ -55,15 +60,31 @@ export default {
   				to: {
   					height: '0'
   				}
-			},
-			draw: {
-				'0%':{
-					strokeDashoffset: '300'
-				},
-				'100%':{
-					strokeDashoffset: '0'
-				}
-			},
+  			},
+  			draw: {
+  				'0%': {
+  					strokeDashoffset: '300'
+  				},
+  				'100%': {
+  					strokeDashoffset: '0'
+  				}
+  			},
+  			marquee: {
+  				from: {
+  					transform: 'translateX(0)'
+  				},
+  				to: {
+  					transform: 'translateX(calc(-100% - var(--gap)))'
+  				}
+  			},
+  			'marquee-vertical': {
+  				from: {
+  					transform: 'translateY(0)'
+  				},
+  				to: {
+  					transform: 'translateY(calc(-100% - var(--gap)))'
+  				}
+  			}
   		},
   		colors: {
   			background: 'hsl(var(--background))',
