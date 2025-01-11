@@ -1,0 +1,28 @@
+<svg
+  width="199"
+  height="178"
+  viewBox="0 0 199 178"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  class="svg-animation"
+>
+  <path
+    d="M3 1H39C45.627 1 51 6.373 51 13V77C51 83.627 56.373 89 63 89H198.5"
+    stroke="#EF4E23"
+    stroke-width="2.01"
+    class="line line-1"
+   
+  />
+  <path
+    d="M0 89H199"
+    stroke="#01B169"
+    stroke-width="2.02"
+    class="line line-2"
+  />
+  <path
+    d="M3 177H39C45.627 177 51 171.627 51 165V101C51 94.373 56.373 89 63 89H198.5"
+    stroke="#FFBC00"
+    stroke-width="2.01"
+    class="line line-3"
+  />
+</svg>

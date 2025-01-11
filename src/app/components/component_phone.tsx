@@ -8,12 +8,122 @@ const Mockup = () => {
     <div className="relative flex justify-center items-center h-screen ">
       {/* Imagem do telefone como contêiner principal */}
       <div className="relative">
+        <div>
+        <div className="absolute -right-[12.1875rem] top-2/4 -translate-y-2/4">
+            <svg
+              width="199"
+              height="178"
+              viewBox="0 0 199 178"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="svg-animation"
+            >
+              {/* Barra 1 */}
+              <path
+                d="M3 1H39C45.627 1 51 6.373 51 13V77C51 83.627 56.373 89 63 89H198.5"
+                stroke="#EF4E23"
+                strokeWidth="2.01"
+                className="line-1"
+              />
+              {/* Barra 2 */}
+              <path
+                d="M0 89H199"
+                stroke="#01B169"
+                strokeWidth="2.02"
+                className="line-2"
+              />
+              {/* Barra 3 */}
+              <path
+                d="M3 177H39C45.627 177 51 171.627 51 165V101C51 94.373 56.373 89 63 89H198.5"
+                stroke="#FFBC00"
+                strokeWidth="2.01"
+                className="line-3"
+              />
+            </svg>
+
+            <div className="absolute top-0 left-0">
+              {/* Bolinha 1 */}
+              <div
+                className="w-3 h-3 bg-[#EF4E23] rounded-full absolute animate-bolinha1 opacity-70 shadow-bolinha"
+                style={{ top: "-5px", left: "3px" }}
+              ></div>
+
+              {/* Bolinha 2 */}
+              <div
+                className="w-3 h-3 bg-[#01B169] rounded-full absolute animate-bolinha2 opacity-70 shadow-bolinha-green"
+                style={{ top: "84px", left: "3px" }}
+              ></div>
+
+              {/* Bolinha 3 */}
+              <div
+                className="w-3 h-3 bg-[#FFBC00] rounded-full absolute animate-bolinha3 opacity-70 shadow-bolinha-yellow"
+                style={{ top: "170px", left: "3px" }}
+              ></div>
+            </div>
+          </div>
+          <div className="bg-red-500 w-[200px] h-[200px] relative ">
+            <Image 
+              src={phone} 
+              alt="phone" 
+              className="absolute w-full h-full" 
+            />
+          </div>
+          
+          <div className="absolute -left-[12.0625rem] top-2/4 -translate-y-2/4">
+            <svg
+              width="201"
+              height="178"
+              viewBox="0 0 201 178"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="svg-animation"
+            >
+              {/* Linha 1 */}
+              <path
+                d="M195.5 1H159.5C152.873 1 147.5 6.373 147.5 13V77C147.5 83.627 142.127 89 135.5 89H0"
+                stroke="#95BF47"
+                strokeWidth="2.01"
+                className="line-1"
+              />
+              {/* Linha 2 */}
+              <path
+                d="M200.971 89H0"
+                stroke="#282FE3"
+                strokeWidth="2"
+                className="line-2"
+              />
+              {/* Linha 3 */}
+              <path
+                d="M195.5 177H159.5C152.873 177 147.5 171.627 147.5 165V101C147.5 94.373 142.127 89 135.5 89H0"
+                stroke="#D93D8D"
+                strokeWidth="2.01"
+                className="line-3"
+              />
+            </svg>
+
+            <div className="absolute inset-0">
+              {/* Bolinha 1 */}
+              <div
+                className="w-3 h-3 bg-[#95BF47] rounded-full absolute animate-bolinha-right-1 opacity-70 shadow-bolinha-green2"
+                style={{ top: "-5px", right: "5px" }}
+              ></div>
+
+              {/* Bolinha 2 */}
+              <div
+                className="w-3 h-3 bg-[#282FE3] rounded-full absolute animate-bolinha-right-2 opacity-70 shadow-bolinha-blue"
+                style={{ top: "84px", right: "5px" }}
+              ></div>
+
+              {/* Bolinha 3 */}
+              <div
+                className="w-3 h-3 bg-[#D93D8D] rounded-full absolute animate-bolinha-right-3 opacity-70 shadow-bolinha-pink"
+                style={{ top: "170px", right: "5px" }}
+              ></div>
+            </div>
+          </div>
+        </div>
         {/* Imagem do telefone */}
-        <Image 
-          src={phone} 
-          alt="phone" 
-          className="block w-auto h-[700px]" 
-        />
+        
         
         {/* Notificações e SVGs */}
         <div className="absolute inset-0 flex flex-col items-center justify-center space-y-6">

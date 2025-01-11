@@ -14,6 +14,7 @@ import Proposal from './proposal'
 import Rodape from './rodape'
 import InfiniteScroll from './scrollhorizontalanimation'
 import Marquee from '@/components/ui/marquee'
+import { HeaderPhone } from './HeaderPhone'
 
 
 export default function Start() {
@@ -40,8 +41,8 @@ export default function Start() {
                     </p>
                 </div>
                 
-                <div className="flex justify-center mt-8">
-                    <Mockup/>
+                <div className="flex flex-col w-full h-[53.75rem] overflow-hidden relative">
+                    <HeaderPhone/>
                     
                 </div>
             </div>
