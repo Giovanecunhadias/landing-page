@@ -18,7 +18,9 @@ export default {
   			draw: 'draw 2.5s linear',
   			'infinite-scroll-horizontal': 'infinite-scroll 25s linear infinite',
   			marquee: 'marquee var(--duration) infinite linear',
-  			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite'
+  			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
+			'bolinha-right': 'bolinha-right 2s ease-out infinite',
+			'bolinha-left': 'bolinha-left 2s ease-out infinite',
   		},
   		keyframes: {
   			bounce: {
@@ -84,7 +86,15 @@ export default {
   				to: {
   					transform: 'translateY(calc(-100% - var(--gap)))'
   				}
-  			}
+  			},
+			'bolinha-right':{
+				'0%': { transform: 'translateX(0)' },
+          		'100%': { transform: 'translateX(-135px)' },
+			},
+			'bolinha-left':{
+				'0%': { transform: 'translateX(0)' },
+          		'100%': { transform: 'translateX(135px)' },
+			}
   		},
   		colors: {
   			background: 'hsl(var(--background))',

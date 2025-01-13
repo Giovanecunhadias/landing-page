@@ -1,5 +1,5 @@
 import { ArrowRight } from 'lucide-react'
-
+import LinesFoots from './lines-foots'
 export default function Integrations() {
     return (
         <>
@@ -14,6 +14,7 @@ export default function Integrations() {
                     Ver todas
                     <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
                 </button>
+                <LinesFoots/>
             </div>
         </>
     )
