@@ -3,9 +3,11 @@ import eduzz from '../assets/image/eduzz.png';
 import hotmart from '../assets/image/hotmart.png';
 import asaas from '../assets/image/ASAAS.png';
 import shopify from '../assets/image/shopify.png';
+import greenn from '../assets/image/green.webp';
 export default function LinesFoots() {
   return (
-    <div className="relative w-full h-[500px] flex items-center justify-center">
+    <>
+    <div className="relative w-full h-[500px] hidden lg:flex items-center justify-center">
       {/* Linhas e bolinhas */}
       <div className="relative flex items-center gap-4">
         {/* Linha azul com bolinhas e logos */}
@@ -20,9 +22,10 @@ export default function LinesFoots() {
             style={{ top: '47%', left: '5%' }} // Responsivo com %
           ></div>
           {/* Adicionar Logos Azul */}
+          
           <div
             className="absolute bg-white p-4 rounded-xl"
-            style={{ top: '-25%', left: '60%' }} // Responsivo com %
+            style={{ top: '-25%', left: '67%' }} // Responsivo com %
           >
             <Image src={asaas} alt="ASAAS" width={100} height={100} />
           </div>
@@ -66,5 +69,23 @@ export default function LinesFoots() {
         </div>
       </div>
     </div>
+    <div className='grid grid-cols-2 gap-4 lg:hidden  '>
+      <div className='bg-white rounded-xl p-4'>
+        <Image src={asaas} alt='asaas'/>
+      </div> 
+      <div className='bg-white rounded-xl p-4'>
+        <Image src={hotmart} alt='asaas' width={150} height={100}/>
+      </div>
+      <div className='bg-white rounded-xl p-4'>
+        <Image src={greenn} alt='green'/>
+      </div>
+      <div className='bg-white rounded-xl p-4'>
+        <Image src={shopify} alt='green'/>
+      </div>
+      <div className='bg-white rounded-xl p-4'>
+        <Image src={eduzz} alt='green'/>
+      </div>
+    </div>
+    </>
   );
 }
