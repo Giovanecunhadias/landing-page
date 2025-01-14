@@ -38,7 +38,7 @@ export default function Nav() {
     )
     const navCenterLinks= (
         <>
-            <div className="flex justify-center gap-2 h-min">
+            <div className="hidden lg:flex justify-center gap-2 h-min">
                 <div className=""></div>
                 <Link href={""}  className={navClasses}>Início</Link>
                 <Link href={""}  className={navClasses}>Como Funciona</Link>

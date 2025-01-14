@@ -125,7 +125,7 @@ const items = [
   {
     id: 1,
     icon: "/icons/shopify.svg",
-    alt: "Ícone de hotmart",
+    alt: "Ícone de shopify",
     label: null,
   },
   {
@@ -136,8 +136,8 @@ const items = [
   },
   {
     id: 3,
-    icon: "/icons/asaas.svg",
-    alt: "Ícone de kiwify",
+    icon: "/icons",
+    alt: "Ícone de hotmart",
     label: "+ 30",
   },
 ];
