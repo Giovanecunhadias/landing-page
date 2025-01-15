@@ -3,8 +3,9 @@
 "use client"
 import React, { useState } from "react"
 import {CircleUserRound } from "lucide-react"
-
+import logo from  "../assets/image/LogoWhite.png"
 import Link from "next/link" 
+import Image from "next/image"
 
 export default function Nav() {
     const [isOpen, setIsOpen] = useState(false)
@@ -55,7 +56,7 @@ export default function Nav() {
 
 
                         <div className="text-x1 font-bold">
-                            <img src="/favicon.ico" width={50} height={50} alt="" />
+                            <Image src={logo} width={50} height={50} alt="" />
                         </div>
 
                         

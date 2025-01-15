@@ -1,6 +1,6 @@
-import integreimage from '@/app/assets/image/integre.avif'
-import configureimage from '@/app/assets/image/configure.avif'
-import automatizeimage from '@/app/assets/image/automatize.avif'
+import integreimage from '../assets/image/1.jpeg'
+import configureimage from '../assets/image/3.png'
+import automatizeimage from '../assets/image/2.png'
 import Image from 'next/image';
 export default function Features() {
     return (            
@@ -8,7 +8,7 @@ export default function Features() {
             {/* INTEGRE */}
             <div className="flex flex-col md:flex-row items-center gap-8 mt-10 sm:mt-20 px-4 sm:px-6 lg:px-8">
                 <div className="md:w-1/2">
-                    <Image src={integreimage} alt="Integre" className="w-full h-auto" />
+                    <Image src={integreimage} alt="Integre" className="w-full max-w-[330px] h-auto" />
                 </div>
                 <div className="md:w-1/2 animate-jump-in">
                     <div style={{backgroundColor: 'rgba(1, 177, 105, 0.5)'}} className="rounded-full w-24 text-center mb-4">
