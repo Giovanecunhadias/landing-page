@@ -15,6 +15,7 @@ import Rodape from './rodape'
 import InfiniteScroll from './scrollhorizontalanimation'
 import Marquee from '@/components/ui/marquee'
 import { HeaderPhone } from './HeaderPhone'
+import Performance from './performance'
 
 
 export default function Start() {
@@ -51,6 +52,7 @@ export default function Start() {
             <InfinityList/>
             {/* INTEGRAÇÕES */}
             <Integrations/>
+            <Performance/>
             {/* DEPOIMENTOS */}
             <Ratings/>
             {/* GARANTIA */}

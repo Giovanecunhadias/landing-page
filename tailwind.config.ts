@@ -21,6 +21,7 @@ export default {
   			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
 			'bolinha-right': 'bolinha-right 2s ease-out infinite',
 			'bolinha-left': 'bolinha-left 2s ease-out infinite',
+			"spin-slow": "spin 6s linear infinite"
   		},
   		keyframes: {
   			bounce: {
