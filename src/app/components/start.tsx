@@ -16,14 +16,44 @@ import InfiniteScroll from './scrollhorizontalanimation'
 import Marquee from '@/components/ui/marquee'
 import { HeaderPhone } from './HeaderPhone'
 import Performance from './performance'
+import { useEffect, useRef, useState } from 'react'
 
 
 export default function Start() {
     const arrowColor = '#D93D8D'
 
+    const [isInView, setIsInView] = useState(true); // Estado que indica se a div está visível
+    const headerRef = useRef<HTMLDivElement>(null); // Referência para o elemento HeaderPhone
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                // Se a div não estiver visível, atualiza o estado
+                setIsInView(entry.isIntersecting);
+            },
+            {
+                root: null, // Visibilidade relativa à viewport
+                rootMargin: '0px', // Sem margem adicional
+                threshold: 0.05, // Considera visível se 10% da div estiver visível
+            }
+        );
+
+        // Inicia a observação do header
+        if (headerRef.current) {
+            observer.observe(headerRef.current);
+        }
+
+        // Cleanup do observer quando o componente for desmontado
+        return () => {
+            if (headerRef.current) {
+                observer.unobserve(headerRef.current);
+            }
+        };
+    }, []);
+
     return (
         <>
-            <Nav />
+            <Nav isInView={isInView} />
             
             <InfiniteScroll/>
             <WhatsappButton/>
@@ -42,7 +72,7 @@ export default function Start() {
                     </p>
                 </div>
                 
-                <div className="flex flex-col w-full h-[36.75rem] overflow-hidden  relative">
+                <div ref={headerRef} className="flex flex-col w-full h-[36.75rem] overflow-hidden  relative">
                     <HeaderPhone/>
                     <div className='min-h-[4px] absolute bottom-0 w-screen bg-[linear-gradient(90deg,_rgb(95,_194,_238)_0%,_rgb(217,_61,_141)_100%)]' ></div>
                 </div>

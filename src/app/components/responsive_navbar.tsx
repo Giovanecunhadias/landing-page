@@ -7,7 +7,7 @@ import logo from  "../assets/image/LogoWhite.png"
 import Link from "next/link" 
 import Image from "next/image"
 
-export default function Nav() {
+export default function Nav({ isInView }: { isInView: boolean }) {
     const [isOpen, setIsOpen] = useState(false)
     const buttonClasses = 'text-gray-100 font-bold text-sm px-2 py-1 border-2 border-gray-100 hover:bg-gray-100 hover:text-gray-800 rounded-lg trasition duration-300'
      const navClasses = 'relative text-white after:content-[""] font-faktum after:absolute after:left-1/2 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-[#d93d8d] after:transition-all after:duration-300 after:transform after:-translate-x-1/2 hover:after:w-full inline-block leading-tight '
@@ -49,7 +49,7 @@ export default function Nav() {
         </>
     )
     return(
-        <nav className="bg-[#1f073b] text-white w-full sticky z-20  top-0">
+        <nav  className={` text-white w-full sticky z-20  top-0 ${isInView ? "bg-[#1f073b]" : "bg-white"}`}>
             <div className="max-w-7x1 mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex flex-row items-center w-full justify-between">
