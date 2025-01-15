@@ -38,7 +38,7 @@ export default function Nav() {
     )
     const navCenterLinks= (
         <>
-            <div className="hidden lg:flex  gap-4 h-min">
+            <div className="hidden lg:flex  fixed left-1/2 top-[25px] -translate-x-1/2 gap-4 h-min">
                 <Link href={""}  className={navClasses}>Início</Link>
                 <Link href={""}  className={navClasses}>Como Funciona</Link>
                 <Link href={""} className={navClasses}>Integrações</Link>
@@ -62,7 +62,7 @@ export default function Nav() {
                         {navCenterLinks}
 
 
-                        <div className="hidden md:flex max-w-[50px]">
+                        <div className="hidden md:flex ">
                             
                             <div className="flex justify-end  items-baseline space-x-2">
                                 {navLinks}
