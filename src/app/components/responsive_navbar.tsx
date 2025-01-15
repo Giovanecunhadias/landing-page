@@ -2,16 +2,17 @@
 
 "use client"
 import React, { useState } from "react"
-import { CircleUserRound } from "lucide-react"
+import {CircleUserRound } from "lucide-react"
+
 import Link from "next/link" 
-import Home from "../page"
+
 export default function Nav() {
     const [isOpen, setIsOpen] = useState(false)
     const buttonClasses = 'text-gray-100 font-bold text-sm px-2 py-1 border-2 border-gray-100 hover:bg-gray-100 hover:text-gray-800 rounded-lg trasition duration-300'
-    const navClasses = 'flex border rounded-2xl px-5 py-1 gray-100 flex items-center' 
+     const navClasses = 'relative text-white after:content-[""] font-faktum after:absolute after:left-1/2 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-[#d93d8d] after:transition-all after:duration-300 after:transform after:-translate-x-1/2 hover:after:w-full inline-block leading-tight '
     const startNow = 'bg-indigo-600 border rounded-2xl font-bold'
-    const navStartNow = 'bg-indigo-600 border rounded-2xl font-bold items-center p-2 mx-8'
-    const navClassLinksCenter = ''
+    const navStartNow = 'bg-[#d93d8d] border border-[#d93d8d] font-faktum rounded-full font-bold items-center px-4 py-2  hover:text-underline'
+    
     const buttons = (
         <>
             <button className={buttonClasses}>Preços</button>
@@ -28,8 +29,8 @@ export default function Nav() {
     )
     const navLinks = (
         <>
-        <div className="flex row">
-            <Link href={""} className={navClasses}><CircleUserRound/>Entrar</Link>
+        <div className="flex-row flex gap-4 justify-end">
+            <Link href={""} className="flex flex-row border border-1 px-6 gap-2  items-center font-faktum rounded-full p-2"><CircleUserRound className="size-4"/>Entrar</Link>
             <Link href={""} className={navStartNow}><p>Comece já</p></Link>
         </div>
             
@@ -37,23 +38,33 @@ export default function Nav() {
     )
     const navCenterLinks= (
         <>
-            <div className="flex justify-center">
+            <div className="hidden lg:flex  gap-4 h-min">
+                <Link href={""}  className={navClasses}>Início</Link>
+                <Link href={""}  className={navClasses}>Como Funciona</Link>
+                <Link href={""} className={navClasses}>Integrações</Link>
                 <Link href={""} className={navClasses}>Preços</Link>
+                <Link href={""} className={navClasses}>Dúvidas</Link>
             </div>
         </>
     )
     return(
-        <nav className="bg-gray-800 text-white w-full ">
+        <nav className="bg-[#1f073b] text-white w-full sticky z-20  top-0">
             <div className="max-w-7x1 mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
-                    <div className="flex flex-row w-full justify-between">
+                    <div className="flex flex-row items-center w-full justify-between">
+
+
                         <div className="text-x1 font-bold">
-                            Brand Name
+                            <img src="/favicon.ico" width={50} height={50} alt="" />
                         </div>
+
+                        
                         {navCenterLinks}
-                        <div className="hidden md:block">
+
+
+                        <div className="hidden md:flex max-w-[50px]">
                             
-                            <div className="flex ml-10  items-baseline space-x-2">
+                            <div className="flex justify-end  items-baseline space-x-2">
                                 {navLinks}
                             </div>
                         </div>

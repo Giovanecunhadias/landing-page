@@ -1,119 +1,70 @@
 "use client"
-import { ArrowRight, MoveRight } from "lucide-react"
-import Image from "next/image"
-import phone from '@/app/assets/image/phone.png'
-import AnimatedGrid from "./animations/line-animatiion"
+import { MoveRight } from 'lucide-react'
 import Plans from "./plans"
-export default function Start(){
+import InfinityList from "./infinity_list"
+import Nav from './responsive_navbar'
+import Faq from './faq'
+import Ratings from './ratings'
+import Mockup from './component_phone'
+import Garantia from './garantia'
+import WhatsappButton from './wpBtn/whatsapp_button'
+import Features from './features'
+import Integrations from './Integrations'
+import Proposal from './proposal'
+import Rodape from './rodape'
+import InfiniteScroll from './scrollhorizontalanimation'
+import Marquee from '@/components/ui/marquee'
+import { HeaderPhone } from './HeaderPhone'
+import Performance from './performance'
+
+
+export default function Start() {
     const arrowColor = '#D93D8D'
 
-    return(
-        
+    return (
         <>
-            <div style={{backgroundColor: '#1F073B'}} className="pt-8">
-                
-                
-                <div className="flex  justify-center">
-                    <p className="flex row text-white text-5xl font-faktum  animate-delay-0 animate-duration-10000 animate-fade-down">Foque <span className="ml-2 mr-2 text-[#d93d8d]" > em vender</span>e deixe as </p>
-                </div>
-                <div className="flex justify-center">
-                    <p className={"text-white  text-5xl animate-delay-0 animate-duration-10000 animate-fade-down font-faktum "}>notas fiscais com<span className="text-[#d93d8d] ml-1">o Spedy.</span></p> 
-                </div>
-                
-                    
+            <Nav />
             
-                
-                <div className="flex  justify-center">
-                    <p className="flex text-white font-arial">Integre <MoveRight color={arrowColor}/> Venda <MoveRight color={arrowColor}/> <span className="ml-1 text-[#d93d8d]">O resto é com o Spedy</span></p>
-                </div>
-                <div className="flex justify-center mt-8">
-                    <Image 
-                        src={phone}
-                        alt=""
-                    />
-                </div>
-            </div>
-            {/*------INTEGRE------*/}
-            <div className="grid grid-col-6 gap-4 mt-20">
-                <div className=" col-end-7 col-span-2 animate-jump-in">
-                    <div className="animate-jump-in">
-                    <div style={{backgroundColor: 'rgba(1, 177, 105, 0.5)'}} className="rounded-full w-24 text-center">
-                        <span className="font-faktum text-[#02b16a]">INTEGRE</span>
-                    </div>
-
-                        <p className="font-faktum text-5xl">Conecte <span className="text-[#01B169]">sua</span></p>
-                        <p className="font-faktum text-5xl text-[#01B169]">plataforma </p>
-                        <p className="font-faktum text-5xl ">de pagamento.</p>
-                        <p className="font-faktum text-md">+ de 30 integrações disponíveis.</p>
-                    </div>
+            <InfiniteScroll/>
+            <WhatsappButton/>
+            
+            <div style={{backgroundColor: '#1F073B'}} className="pt-8   pt-22
+            ">
+                <div className="flex flex-col items-center text-center">
+                    <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-faktum animate-delay-0 animate-duration-10000 animate-fade-down">
+                        Foque <span className="text-[#d93d8d]">em vender</span> e deixe as<br className="hidden sm:inline" />
+                        Vendas com <span className="text-[#d93d8d]">a Ameii.</span>
+                    </h1>
                     
+                    <p className="flex items-center text-white font-arial mt-4 text-sm sm:text-base lg:text-lg">
+                        Integre <MoveRight color={arrowColor} className="mx-1 w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" /> Venda <MoveRight color={arrowColor} className="mx-1 w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" /> 
+                        <span className="text-[#d93d8d]">O resto é com o Ameii</span>
+                    </p>
                 </div>
-            </div>
-            {/*----CONFIGURE----*/}
-            <div className="grid grid-col-6 gap-4 mt-20">
-                <div className=" col-end-7 col-span-2 animate-jump-in">
-                    <div className="animate-jump-in">
-                        <div style={{ backgroundColor: 'rgba(217, 61, 141, 0.5)' }} className="rounded-full w-28 text-center">
-                            <span className="font-faktum text-[#d93d8d]">CONFIGURE</span>
-                        </div>
-                        <p className="font-faktum text-5xl">O Spedy entrega</p>
-                        <p className="font-faktum text-5xl">as <span className="text-[#d93d8d]">suas vendas</span></p>
-                        <p className="font-faktum text-5xl">e emite as notas.</p>
-                        <p className="font-faktum text-2xl">Você escolhe: na cobrança, após o</p>
-                        <p className="font-faktum text-2xl">pagamento ou após a garantia.</p>
-                    </div>
-                    
-                </div>
-            </div>
-            {/*AUTOMATIZE*/}
-            <div className="grid grid-col-6 gap-4 mt-20">
-                <div className="col-end-7 col-span-2 animate-jump-in">
-                    <div style={{ backgroundColor: 'rgba(95, 194, 238, 0.5)'}} className="rounded-full w-28 text-center">
-                        <span className="font-faktum text-[#5fc2ee]">AUTOMATIZE</span>
-                    </div>
-                    <p className="font-faktum text-5xl">Enviamos a nota </p>
-                    <p className="font-faktum text-5xl">fiscal para<span  className="text-[#5fc2ee]">seu</span></p>
-                    <p className="font-faktum text-5xl"><span className="text-[#5fc2ee]">cliente</span> na hora!</p>
-                    <p className="font-faktum text-2xl">Automaticamente e poupando seu </p>
-                    <p className="font-faktum text-2xl">valioso tempo!</p>
-                </div>
-            </div>  
-            {/*INTEGRAÇÕES*/}
-            <div style={{backgroundColor: '#1f073b'}} className=" flex flex-col gap-2 bg-indigo-400  justify-center items-center  mb-20">
-                <div style={{backgroundColor: 'rgba(217, 61, 141, 0.5)'}} className="mt-10 rounded-full w-28">
-                    <p className="font-faktum text-center text-[#d93d8d]">Integrações</p>
-                </div>
-                <br />
-                <p className="flex-none text-5xl text-white font-faktum">Encaixe o Spedy na sua operação</p>
-                <p className="font-faktum text-2xl text-white">Integre com mais de 40 plataformas do mercado.</p>
                 
-                <button className="bg-[#D93D8D] border rounded-2xl w-32 h-8 text-white font-faktum flex items-center justify-center gap-2">
-                    Ver todas
-                    <ArrowRight />
-                </button>
+                <div className="flex flex-col w-full h-[36.75rem] overflow-hidden  relative">
+                    <HeaderPhone/>
+                    <div className='min-h-[4px] absolute bottom-0 w-screen bg-[linear-gradient(90deg,_rgb(95,_194,_238)_0%,_rgb(217,_61,_141)_100%)]' ></div>
+                </div>
+            </div>
 
-
-                
-            </div>
-            {/*PERFOMANCE*/}
-            <div className="flex flex-col gap-4 justify-center items-center">
-                <div style={{ backgroundColor: 'rgba(95, 194, 238, 0.5)'}} className="rounded-full w-28 text-center">
-                        <span className="font-faktum text-[#5fc2ee]">PERFOMANCE</span>
-                </div>
-                <p className="font-faktum text-5xl ">Tecnologia para <span className="text-[#5fc2ee]">economizar o seu tempo</span></p>
-            </div>
-            {/*DEPOIMENTOS*/}
-            <div className="flex flex-col gap-2 justify-center items-center">
-                <div style={{backgroundColor: 'rgba(217, 61, 141, 0.5)'}} className="rounded-full w-auto text-center ">
-                    <span className="font-faktum text-[#d93d8d]">DEPOIMENTOS</span>
-                </div>
-                <p className="text-5xl font-faktum"> + de 6 milhões de notas emitidas</p>
-            </div>
-            <div style={{backgroundColor: '#1F073B'}}className="">
-                
-            </div>
-            <AnimatedGrid/>
+            <Features/>
+            <InfinityList/>
+            {/* INTEGRAÇÕES */}
+            <Integrations/>
+            <Performance/>
+            {/* DEPOIMENTOS */}
+            <Ratings/>
+            {/* GARANTIA */}
+            <Garantia/>              
             <Plans/>
+            <Faq/>
+            {/*COMECE AGORA*/}
+            <Proposal/>
+            {/*RODAPE*/}
+            <Rodape/>
+            
         </>
     )
 }
+

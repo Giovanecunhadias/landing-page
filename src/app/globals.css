@@ -84,3 +84,140 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+
+@keyframes move-and-fade {
+  0% {
+    left: 3px; /* Início */
+    opacity: 1; /* Totalmente visível */
+  }
+  50% {
+    opacity: 0.6; /* Perde um pouco da opacidade no meio */
+  }
+  80% {
+    left: 40px; /* Quase no final */
+    opacity: 0.3; /* Quase invisível */
+  }
+  100% {
+    left: 40px; /* Posição final */
+    opacity: 0; /* Totalmente invisível */
+  }
+}
+
+/* Bolinha para linhas da esquerda */
+.animate-bolinha1 {
+  animation: move-and-fade 2s ease-out infinite;
+  animation-delay: 2s; /* Atraso para esperar o carregamento das linhas */
+  opacity: 0; /* Invisível antes da animação */
+}
+
+.animate-bolinha2 {
+  animation: move-and-fade 2s ease-out infinite;
+  animation-delay: 2s;
+  opacity: 0; /* Invisível antes da animação */
+}
+
+.animate-bolinha3 {
+  animation: move-and-fade 2s ease-out infinite;
+  animation-delay: 2s;
+  opacity: 0; /* Invisível antes da animação */
+}
+
+@keyframes move-and-fade-right {
+  0% {
+    right: 5px; /* Início */
+    opacity: 1; /* Totalmente visível */
+  }
+  50% {
+    opacity: 0.6; /* Perde um pouco da opacidade no meio */
+  }
+  80% {
+    right: 40px; /* Quase no final */
+    opacity: 0.3; /* Quase invisível */
+  }
+  100% {
+    right: 40px; /* Posição final */
+    opacity: 0; /* Totalmente invisível */
+  }
+}
+
+/* Bolinha para linhas da direita */
+.animate-bolinha-right-1 {
+  animation: move-and-fade-right 2s ease-out infinite;
+  animation-delay: 2s;
+  opacity: 0; /* Invisível antes da animação */
+}
+
+.animate-bolinha-right-2 {
+  animation: move-and-fade-right 2s ease-out infinite;
+  animation-delay: 2s;
+  opacity: 0; /* Invisível antes da animação */
+}
+
+.animate-bolinha-right-3 {
+  animation: move-and-fade-right 2s ease-out infinite;
+  animation-delay: 2s;
+  opacity: 0; /* Invisível antes da animação */
+}
+
+@keyframes load-line {
+  0% {
+    stroke-dashoffset: 273.204; /* Linha escondida */
+  }
+  100% {
+    stroke-dashoffset: 0; /* Linha totalmente visível */
+  }
+}
+
+/* Estilo base para as linhas */
+.line-1 {
+  stroke-dasharray: 273.204; /* Comprimento total do caminho */
+  stroke-dashoffset: 273.204; /* Começa escondida */
+  animation: load-line 2s linear forwards;
+  animation-delay: 0s; /* Sem atraso */
+}
+
+.line-2 {
+  stroke-dasharray: 300; /* Ajuste este valor para o comprimento da linha 2 */
+  stroke-dashoffset: 300;
+  animation: load-line 2s linear forwards;
+  animation-delay: 0.5s; /* Atraso de 0.5s */
+}
+
+.line-3 {
+  stroke-dasharray: 350; /* Ajuste este valor para o comprimento da linha 3 */
+  stroke-dashoffset: 350;
+  animation: load-line 2s linear forwards;
+  animation-delay: 1s; /* Atraso de 1s */
+}
+
+/* Estilo de brilho para a bolinha 1 */
+.shadow-bolinha {
+  box-shadow: 0 0 10px 5px rgba(239, 78, 35, 0.5); /* Brilho vermelho */
+}
+
+/* Estilo de brilho para a bolinha 2 */
+.shadow-bolinha-green {
+  box-shadow: 0 0 10px 5px rgba(1, 177, 105, 0.5); /* Brilho verde */
+}
+
+/* Estilo de brilho para a bolinha 3 */
+.shadow-bolinha-yellow {
+  box-shadow: 0 0 10px 5px rgba(255, 188, 0, 0.5); /* Brilho amarelo */
+}
+
+/* Estilo de brilho para a bolinha 1 (verde) */
+.shadow-bolinha-green2 {
+  box-shadow: 0 0 10px 5px rgba(149, 191, 71, 0.5); /* Brilho verde */
+}
+
+/* Estilo de brilho para a bolinha 2 (azul) */
+.shadow-bolinha-blue {
+  box-shadow: 0 0 10px 5px rgba(40, 47, 227, 0.5); /* Brilho azul */
+}
+
+/* Estilo de brilho para a bolinha 3 (rosa) */
+.shadow-bolinha-pink {
+  box-shadow: 0 0 10px 5px rgba(217, 61, 141, 0.5); /* Brilho rosa */
+}

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const AnimatedGrid: React.FC = () => {
   const animation = {
-    x: [0, 100, 0], // Move até o meio e volta
+    x: [0, 0, 2000], // Move até o meio e volta
     opacity: [1, 0.8, 0], // Suaviza até desaparecer
     transition: { duration: 3, repeat: Infinity },
   };

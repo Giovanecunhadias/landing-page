@@ -1,5 +1,6 @@
-import type { Config } from "tailwindcss";
 
+import type { Config } from "tailwindcss";
+import tailwindcssAnimated from 'tailwindcss-animated';
 export default {
     darkMode: ["class"],
     content: [
@@ -10,7 +11,17 @@ export default {
   theme: {
   	extend: {
   		animation: {
-  			bounce: 'bounce 1.5s infinite'
+  			bounce: 'bounce 1.5s infinite',
+  			'infinite-scroll': 'infinite-scroll 30s linear infinite',
+  			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+  			draw: 'draw 2.5s linear',
+  			'infinite-scroll-horizontal': 'infinite-scroll 25s linear infinite',
+  			marquee: 'marquee var(--duration) infinite linear',
+  			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
+			'bolinha-right': 'bolinha-right 2s ease-out infinite',
+			'bolinha-left': 'bolinha-left 2s ease-out infinite',
+			"spin-slow": "spin 6s linear infinite"
   		},
   		keyframes: {
   			bounce: {
@@ -20,7 +31,71 @@ export default {
   				'50%': {
   					transform: 'translateY(-10px)'
   				}
-  			}
+  			},
+  			'infinite-scroll': {
+  				from: {
+  					transform: 'translateX(0)'
+  				},
+  				to: {
+  					transform: 'translateX(-100%)'
+  				}
+  			},
+  			'infinite-scroll-horizontal': {
+  				from: {
+  					transform: 'translateX(0)'
+  				},
+  				to: {
+  					transform: 'translateX(-100%)'
+  				}
+  			},
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
+  				}
+  			},
+  			draw: {
+  				'0%': {
+  					strokeDashoffset: '300'
+  				},
+  				'100%': {
+  					strokeDashoffset: '0'
+  				}
+  			},
+  			marquee: {
+  				from: {
+  					transform: 'translateX(0)'
+  				},
+  				to: {
+  					transform: 'translateX(calc(-100% - var(--gap)))'
+  				}
+  			},
+  			'marquee-vertical': {
+  				from: {
+  					transform: 'translateY(0)'
+  				},
+  				to: {
+  					transform: 'translateY(calc(-100% - var(--gap)))'
+  				}
+  			},
+			'bolinha-right':{
+				'0%': { transform: 'translateX(0)' },
+          		'100%': { transform: 'translateX(-135px)' },
+			},
+			'bolinha-left':{
+				'0%': { transform: 'translateX(0)' },
+          		'100%': { transform: 'translateX(135px)' },
+			}
   		},
   		colors: {
   			background: 'hsl(var(--background))',
@@ -77,7 +152,6 @@ export default {
   	}
   },
   plugins: [
-    require('tailwindcss-animated'),
-      require("tailwindcss-animate")
-],
+	tailwindcssAnimated
+  ],
 } satisfies Config;
