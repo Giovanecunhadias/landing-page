@@ -1,6 +1,5 @@
 "use client";
 
-
 import { useWindowWidth } from "@/hooks/usewidth";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -12,18 +11,18 @@ export function HeaderPhoneNotificationTwo() {
     <div className="w-[299px] gap-3 inline-flex items-center bg-[#F1E1EF] py-2 pl-2 pr-4 rounded-[0.75rem] relative">
       <div className="min-w-[3.25rem] min-h-[3.25rem]">
         <Image
-          src={"/mail_blue.svg"}
+          src={"/favicon.ico"}
           alt="Ícone de envelope"
-          width={52}
-          height={52}
+          width={42}
+          height={42}
         />
       </div>
       <div className="flex w-full flex-col text-[0.9375rem]">
         <b className="inline-flex items-center justify-between font-faktumSemiBold text-brand-deep-warm">
-          Olá Juliana <span className="opacity-25 text-xs">1m atrás</span>
+          Falaaa Calabrezo <span className="opacity-25 text-xs">1m atrás</span>
         </b>
         <p className="text-foreground opacity-70 font-faktumMedium">
-          Sua nota fiscal está pronta!
+          Saiu mais uma vendinha!
         </p>
       </div>
 
@@ -40,7 +39,7 @@ export function HeaderPhoneNotificationTwo() {
                 "flex justify-center items-center w-[10.3125rem] h-[4.0625rem] rounded-xl z-10 py-1 px-4",
                 {
                   "bg-[#e0f7b6]": item.id === 1,
-                  "bg-[#282fe3]": item.id === 2,
+                  "bg-[#fff]": item.id === 2,
                   "bg-[#d93d8d]": item.id === 3,
                 }
               )}
@@ -130,7 +129,7 @@ const items = [
   },
   {
     id: 2,
-    icon: "/icons/asaas.svg",
+    icon: "/icons/woocommerce.webp",
     alt: "Ícone de kiwify",
     label: null,
   },

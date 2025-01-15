@@ -5,8 +5,8 @@ import asaas from '../assets/image/ASAAS.png';
 import shopify from '../assets/image/shopify.png';
 import greenn from '../assets/image/green.webp';
 import braip from '../assets/image/braip.png';
-import cartpanda from '../assets/image/cartpanda.png';
-import kiwify from '../assets/image/kiwify.png'
+import utmify from '../assets/image/utmify.png'
+import woocommerce from '../assets/image/woocommerce.webp'
 export default function LinesFoots() {
   return (
     <>
@@ -25,18 +25,18 @@ export default function LinesFoots() {
             style={{ top: '47%', left: '5%' }} // Responsivo com %
           ></div>
           {/* Adicionar Logos Azul */}
+          
+          <div 
+          className='absolute bg-white  rounded-3xl'
+          style={{left: '25%'}}
+          >
+            <Image className='rounded-2xl' src={woocommerce} alt='woocommerce' width={120} height={100}/>
+          </div>
           <div
           className='absolute bg-white p-6 rounded-xl'
           style={{left:'65%'}}
           >
-            <Image src={cartpanda} alt='cart'/>
-          </div>
-          
-          <div 
-          className='absolute bg-white p-4 rounded-xl'
-          style={{left: '25%'}}
-          >
-            <Image src={kiwify} alt='kiwify' width={100} height={100}/>
+               <Image src={utmify} alt='utmify' width={100} height={100}/>
           </div>
           <div
             className="absolute bg-white p-4 rounded-xl"

@@ -11,19 +11,19 @@ export function HeaderPhoneNotificationOne() {
     <div className="w-[299px] gap-3 inline-flex items-center bg-[#F1E1EF] py-2 pl-2 pr-4 rounded-[0.75rem] relative">
       <div className="min-w-[3.25rem] min-h-[3.25rem]">
         <Image
-          src={"/mail_blue.svg"}
+          src={"/favicon.ico"}
           alt="Ícone de envelope"
-          width={52}
-          height={52}
+          width={42}
+          height={42}
         />
       </div>
 
       <div className="flex w-full flex-col text-[0.9375rem]">
         <b className="inline-flex items-center justify-between font-faktumSemiBold text-brand-deep-warm">
-          Olá Ricardo <span className="opacity-25 text-xs">1m atrás</span>
+          Botar a Casa!<span className="opacity-25 text-xs">1m atrás</span>
         </b>
         <p className="text-foreground opacity-70 font-faktumMedium">
-          Sua nota fiscal está pronta!
+          Escala Fofo, Bota a casa que o ROI veio
         </p>
       </div>
 
@@ -40,7 +40,7 @@ export function HeaderPhoneNotificationOne() {
               className={cn(
                 "flex justify-center items-center w-[10.3125rem] h-[4.0625rem] rounded-xl z-10 py-1 px-4",
                 {
-                  "bg-[#ef4e23]": item.id === 1,
+                  "bg-[#fff]": item.id === 1,
                   "bg-[#01b169]": item.id === 2,
                   "bg-[#ffbc00]": item.id === 3,
                 }
@@ -69,7 +69,7 @@ export function HeaderPhoneNotificationOne() {
               {/* Barra 1 */}
               <path
                 d="M3 1H39C45.627 1 51 6.373 51 13V77C51 83.627 56.373 89 63 89H198.5"
-                stroke="#EF4E23"
+                stroke="#fff"
                 strokeWidth="2.01"
                 className="line-1"
               />
@@ -92,7 +92,7 @@ export function HeaderPhoneNotificationOne() {
             <div className="absolute top-0 left-0">
               {/* Bolinha 1 */}
               <div
-                className="w-3 h-3 bg-[#EF4E23] rounded-full absolute animate-bolinha1 opacity-70 shadow-bolinha"
+                className="w-3 h-3 bg-[#fff] rounded-full absolute animate-bolinha1 opacity-70 shadow-bolinha"
                 style={{ top: "-5px", left: "3px" }}
               ></div>
 
@@ -118,7 +118,7 @@ export function HeaderPhoneNotificationOne() {
 const items = [
   {
     id: 1,
-    icon: "/icons/hotmart.svg",
+    icon: "/icons/utmify.png",
     alt: "Ícone de hotmart",
   },
   {
