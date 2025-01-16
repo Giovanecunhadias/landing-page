@@ -2,15 +2,64 @@ import integreimage from '../assets/image/1.jpeg'
 import configureimage from '../assets/image/3.png'
 import automatizeimage from '../assets/image/2.png'
 import Image from 'next/image';
+import { useEffect, useRef, useState } from 'react';
+import { config } from 'process';
 export default function Features() {
+
+
+    const [isIntegreView, setIntegreView] = useState(true); // Estado que indica se a div está visível
+    const [isConfigureView, setConfigureView]= useState(true);
+    const [isAutomatizeView, setAutomatize] = useState(true);
+    const integre = useRef<HTMLImageElement>(null); // Referência para o elemento HeaderPhone
+    const configure = useRef<HTMLImageElement>(null);
+    const automatize = useRef<HTMLImageElement>(null);
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                // Se a div não estiver visível, atualiza o estado
+                setIntegreView(entry.isIntersecting);
+                setConfigureView(entry.isIntersecting);
+                setAutomatizeView(entry.isIntersecting)
+            },
+            {
+                root: null, // Visibilidade relativa à viewport
+                rootMargin: '0px', // Sem margem adicional
+                threshold: 0.2, // Considera visível se 10% da div estiver visível
+            }
+        );
+
+        // Inicia a observação do header
+        if (integre.current  ) {
+            observer.observe(integre.current);
+        }
+        if (configure.current){
+            observer.observe(configure.current)
+        }
+        if(automatize.current){
+            observer.observe(automatize.current)
+        }
+        // Cleanup do observer quando o componente for desmontado
+        return () => {
+            if (integre.current) {
+                observer.unobserve(integre.current);
+            }
+            if (configure.current){
+                observer.unobserve(configure.current)
+            }
+            if(automatize.current){
+                observer.unobserve(automatize.current)
+            }
+        };
+    }, []);
+
     return (            
         <>
             {/* INTEGRE */}
-            <div className="flex flex-col md:flex-row items-center py-[250px] gap-14  px-4 sm:px-6 lg:px-8 bg-gradient-to-t from-[#01B169]/20 via-[#01B169]/10 to-white">
+            <div  className=" flex flex-col md:flex-row items-center py-[250px] gap-14  px-4 sm:px-6 lg:px-8 bg-gradient-to-t from-[#01B169]/20 via-[#01B169]/10 to-white">
                 
 
                 <div className="md:w-1/2 flex flex-row justify-end">
-                    <Image src={integreimage} alt="Integre" className="w-full max-w-[600px] h-auto" />
+                    <Image ref={integre} src={integreimage} alt="Integre" className={`w-full max-w-[600px] h-auto ${isIntegreView ? ' animate-jump-in animate-delay-200' : 'opacity-0'}`} />
                 </div>
                 <div className="md:w-1/2 animate-jump-in">
                     <div style={{backgroundColor: 'rgba(1, 177, 105, 0.1)'}} className="rounded-full w-24 text-center mb-4">
@@ -28,7 +77,7 @@ export default function Features() {
             {/* CONFIGURE */}
             <div className="flex flex-col md:flex-row items-center py-[250px] gap-14  px-4 sm:px-6 lg:px-8 bg-gradient-to-t from-[#d93d8d]/50 via-[#d93d8d]/10 to-white">
                 <div className="md:w-1/2 flex flex-row justify-end">
-                    <Image src={configureimage} alt="Configure" className="w-full max-w-[600px] h-auto" />
+                    <Image ref={configure} src={configureimage} alt="Configure" className={`w-full max-w-[600px] h-auto ${isConfigureView ? "animate-jump-in": "opacity-0"}`} />
                 </div>
                 <div className="md:w-1/2 animate-jump-in">
                     <div style={{ backgroundColor: 'rgba(217, 61, 141, 0.1)' }} className="rounded-full w-28 text-center mb-4">
@@ -49,7 +98,7 @@ export default function Features() {
             {/* AUTOMATIZE */}
             <div className="flex flex-col md:flex-row items-center py-[250px] gap-14  px-4 sm:px-6 lg:px-8 bg-gradient-to-t from-[#5fc2ee]/50 via-[#5fc2ee]/10 to-white">
                 <div className="md:w-1/2 flex flex-row justify-end">
-                    <Image src={automatizeimage} alt="Automatize" className="w-full max-w-[600px] h-auto" />
+                    <Image src={automatizeimage} alt="Automatize" className={`w-full max-w-[600px] h-auto ${isAutomatizeView ? "animate-jump-in": "opacity-0"}`} ref={automatize}/>
                 </div>
                 <div className="md:w-1/2 animate-jump-in">
                     <div style={{ backgroundColor: 'rgba(95, 194, 238, 0.1)'}} className="rounded-full w-28 text-center mb-4">
