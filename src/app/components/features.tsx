@@ -6,14 +6,14 @@ export default function Features() {
     return (            
         <>
             {/* INTEGRE */}
-            <div className="flex flex-col md:flex-row items-center py-10 gap-8  sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-t from-[#01B169] to-[#01B169]/50">
+            <div className="flex flex-col md:flex-row items-center py-[250px] gap-14  px-4 sm:px-6 lg:px-8 bg-gradient-to-t from-[#01B169]/20 via-[#01B169]/10 to-white">
                 
 
-                <div className="md:w-1/2">
-                    <Image src={integreimage} alt="Integre" className="w-full max-w-[330px] h-auto" />
+                <div className="md:w-1/2 flex flex-row justify-end">
+                    <Image src={integreimage} alt="Integre" className="w-full max-w-[600px] h-auto" />
                 </div>
                 <div className="md:w-1/2 animate-jump-in">
-                    <div style={{backgroundColor: 'rgba(1, 177, 105, 0.5)'}} className="rounded-full w-24 text-center mb-4">
+                    <div style={{backgroundColor: 'rgba(1, 177, 105, 0.1)'}} className="rounded-full w-24 text-center mb-4">
                         <span className="font-faktum text-[#02b16a] text-sm sm:text-base">INTEGRE</span>
                     </div>
                     <h2 className="font-faktum text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
@@ -26,12 +26,12 @@ export default function Features() {
             </div>
 
             {/* CONFIGURE */}
-            <div className="flex flex-col md:flex-row-reverse items-center gap-8 px-4 sm:px-6 lg:px-8">
-                <div className="md:w-1/2">
-                    <Image src={configureimage} alt="Configure" className="w-full h-auto" />
+            <div className="flex flex-col md:flex-row items-center py-[250px] gap-14  px-4 sm:px-6 lg:px-8 bg-gradient-to-t from-[#d93d8d]/50 via-[#d93d8d]/10 to-white">
+                <div className="md:w-1/2 flex flex-row justify-end">
+                    <Image src={configureimage} alt="Configure" className="w-full max-w-[600px] h-auto" />
                 </div>
                 <div className="md:w-1/2 animate-jump-in">
-                    <div style={{ backgroundColor: 'rgba(217, 61, 141, 0.5)' }} className="rounded-full w-28 text-center mb-4">
+                    <div style={{ backgroundColor: 'rgba(217, 61, 141, 0.1)' }} className="rounded-full w-28 text-center mb-4">
                         <span className="font-faktum text-[#d93d8d] text-sm sm:text-base">CONFIGURE</span>
                     </div>
                     <h2 className="font-faktum text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
@@ -47,12 +47,12 @@ export default function Features() {
             </div>
 
             {/* AUTOMATIZE */}
-            <div className="flex flex-col md:flex-row items-center gap-8 mt-10 sm:mt-20 px-4 sm:px-6 lg:px-8">
-                <div className="md:w-1/2">
-                    <Image src={automatizeimage} alt="Automatize" className="w-full h-auto" />
+            <div className="flex flex-col md:flex-row items-center py-[250px] gap-14  px-4 sm:px-6 lg:px-8 bg-gradient-to-t from-[#5fc2ee]/50 via-[#5fc2ee]/10 to-white">
+                <div className="md:w-1/2 flex flex-row justify-end">
+                    <Image src={automatizeimage} alt="Automatize" className="w-full max-w-[600px] h-auto" />
                 </div>
                 <div className="md:w-1/2 animate-jump-in">
-                    <div style={{ backgroundColor: 'rgba(95, 194, 238, 0.5)'}} className="rounded-full w-28 text-center mb-4">
+                    <div style={{ backgroundColor: 'rgba(95, 194, 238, 0.1)'}} className="rounded-full w-28 text-center mb-4">
                         <span className="font-faktum text-[#5fc2ee] text-sm sm:text-base">AUTOMATIZE</span>
                     </div>
                     <h2 className="font-faktum text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
