@@ -6,7 +6,7 @@ export default function Features() {
     return (            
         <>
             {/* INTEGRE */}
-            <div className="flex flex-col md:flex-row items-center gap-8 mt-10 sm:mt-20 px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row items-center py-10 gap-8  sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-t from-[#01B169] to-[#01B169]/50">
                 
 
                 <div className="md:w-1/2">
@@ -23,11 +23,10 @@ export default function Features() {
                     </h2>
                     <p className="font-faktum text-sm sm:text-md lg:text-lg mt-2">+ de 30 integrações disponíveis.</p>
                 </div>
-            
             </div>
 
             {/* CONFIGURE */}
-            <div className="flex flex-col md:flex-row-reverse items-center gap-8 mt-10 sm:mt-20 px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row-reverse items-center gap-8 px-4 sm:px-6 lg:px-8">
                 <div className="md:w-1/2">
                     <Image src={configureimage} alt="Configure" className="w-full h-auto" />
                 </div>
@@ -40,7 +39,7 @@ export default function Features() {
                         as <span className="text-[#d93d8d]">suas vendas</span><br />
                         e emite as notas.
                     </h2>
-                    <p className="font-faktum text-lg sm:text-xl md:text-2xl lg:text-3xl mt-2">
+                    <p className="font-faktum text-lg sm:text-xl md:text-2xl lg:text-3xl ">
                         Você escolhe: na cobrança, após o<br className="hidden sm:inline" />
                         pagamento ou após a garantia.
                     </p>
