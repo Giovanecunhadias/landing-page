@@ -19,7 +19,7 @@ export default function Features() {
                 // Se a div não estiver visível, atualiza o estado
                 setIntegreView(entry.isIntersecting);
                 setConfigureView(entry.isIntersecting);
-                setAutomatizeView(entry.isIntersecting)
+                setAutomatize(entry.isIntersecting)
             },
             {
                 root: null, // Visibilidade relativa à viewport
