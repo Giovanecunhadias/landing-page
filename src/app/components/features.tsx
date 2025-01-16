@@ -7,6 +7,8 @@ export default function Features() {
         <>
             {/* INTEGRE */}
             <div className="flex flex-col md:flex-row items-center gap-8 mt-10 sm:mt-20 px-4 sm:px-6 lg:px-8">
+                
+
                 <div className="md:w-1/2">
                     <Image src={integreimage} alt="Integre" className="w-full max-w-[330px] h-auto" />
                 </div>
@@ -21,6 +23,7 @@ export default function Features() {
                     </h2>
                     <p className="font-faktum text-sm sm:text-md lg:text-lg mt-2">+ de 30 integrações disponíveis.</p>
                 </div>
+            
             </div>
 
             {/* CONFIGURE */}
