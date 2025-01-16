@@ -34,7 +34,7 @@ export default function Start() {
             {
                 root: null, // Visibilidade relativa à viewport
                 rootMargin: '0px', // Sem margem adicional
-                threshold: 0.05, // Considera visível se 10% da div estiver visível
+                threshold: 0.2, // Considera visível se 10% da div estiver visível
             }
         );
 
