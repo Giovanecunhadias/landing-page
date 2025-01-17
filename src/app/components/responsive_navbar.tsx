@@ -10,7 +10,15 @@ import Image from "next/image"
 export default function Nav({ isInView }: { isInView: boolean }) {
     const [isOpen, setIsOpen] = useState(false)
     const buttonClasses = 'text-gray-100 font-bold text-sm px-2 py-1 border-2 border-gray-100 hover:bg-gray-100 hover:text-gray-800 rounded-lg trasition duration-300'
-     const navClasses = `relative  after:content-[""] font-faktum after:absolute after:left-1/2 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-[#d93d8d] after:transition-all after:duration-300 after:transform after:-translate-x-1/2 hover:after:w-full inline-block leading-tight ${isInView ? "text-white": "text-[#1f073b]"}`
+    const navClasses = `
+  relative font-faktum leading-tight inline-block text-center 
+  after:content-[''] after:absolute after:left-1/2 after:bottom-[-2px] 
+  after:w-0 after:h-[2px] after:bg-[#d93d8d] after:transition-all 
+  after:duration-300 after:transform after:-translate-x-1/2 
+  hover:after:w-full
+  ${isInView ? 'text-white' : 'text-[#1f073b]'}
+`
+
     const startNow = 'bg-indigo-600 border rounded-2xl font-bold'
     const navStartNow = 'bg-[#d93d8d] border border-[#d93d8d] font-faktum rounded-full font-bold items-center px-4 py-2  hover:text-underline'
     

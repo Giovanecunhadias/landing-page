@@ -7,16 +7,16 @@ import { config } from 'process';
 export default function Features() {
 
 
-    const [isIntegreView, setIntegreView] = useState(true); // Estado que indica se a div está visível
+    const [isIntegreView, setIntegreView] = useState(true); 
     const [isConfigureView, setConfigureView]= useState(true);
     const [isAutomatizeView, setAutomatize] = useState(true);
-    const integre = useRef<HTMLImageElement>(null); // Referência para o elemento HeaderPhone
+    const integre = useRef<HTMLImageElement>(null); 
     const configure = useRef<HTMLImageElement>(null);
     const automatize = useRef<HTMLImageElement>(null);
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
-                // Se a div não estiver visível, atualiza o estado
+               
                 setIntegreView(entry.isIntersecting);
                 setConfigureView(entry.isIntersecting);
                 setAutomatize(entry.isIntersecting)
@@ -24,7 +24,7 @@ export default function Features() {
             {
                 root: null, // Visibilidade relativa à viewport
                 rootMargin: '0px', // Sem margem adicional
-                threshold: 0.2, // Considera visível se 10% da div estiver visível
+                threshold: 0.5, // Considera visível se 10% da div estiver visível
             }
         );
 
@@ -59,7 +59,7 @@ export default function Features() {
                 
 
                 <div className="md:w-1/2 flex flex-row justify-end">
-                    <Image ref={integre} src={integreimage} alt="Integre" className={`w-full max-w-[600px] h-auto ${isIntegreView ? ' animate-jump-in animate-delay-200' : 'opacity-0'}`} />
+                    <Image ref={integre} src={integreimage} alt="Integre" className={`w-full max-w-[600px] h-auto  ${isIntegreView ? ' animate-jump-in duration-[1ms] animate-delay-200' : 'opacity-0'}`} />
                 </div>
                 <div className="md:w-1/2 animate-jump-in">
                     <div style={{backgroundColor: 'rgba(1, 177, 105, 0.1)'}} className="rounded-full w-24 text-center mb-4">
