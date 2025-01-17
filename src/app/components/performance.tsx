@@ -62,231 +62,129 @@ export default function Performance(){
         const [p17, setp17] = useState(true)
         const [p18, setp18] = useState(true)
         const [p19, setp19] = useState(true)
-
+        const viewPort = useRef<HTMLDivElement>(null)
         useEffect(() => {
             const observer = new IntersectionObserver(
                 ([entry]) => {
-                    setImageIsInView(entry.isIntersecting)
-                    setImageIsInViewtwo(entry.isIntersecting)
-                    setImageIsInViewthree(entry.isIntersecting)
-                    setImageIsInViewfour(entry.isIntersecting)
-                    setImageIsInViewfive(entry.isIntersecting)
-                    setImageIsInViewsix(entry.isIntersecting)
-                    setImageIsInViewseven(entry.isIntersecting)
-                    setCoproductorsInView(entry.isIntersecting)
-                    setp(entry.isIntersecting)
-                    setp2(entry.isIntersecting)
-                    setp3(entry.isIntersecting)
-                    setp4(entry.isIntersecting)
-                    setp5(entry.isIntersecting)
-                    setp6(entry.isIntersecting)
-                    setp7(entry.isIntersecting)
-                    setp8(entry.isIntersecting)
-                    setp9(entry.isIntersecting)
-                    setp10(entry.isIntersecting)
-                    setp11(entry.isIntersecting)
-                    setp12(entry.isIntersecting)
-                    setp13(entry.isIntersecting)
-                    setp14(entry.isIntersecting)
-                    setp15(entry.isIntersecting)
-                    setp16(entry.isIntersecting)
-                    setp17(entry.isIntersecting)
-                    setp18(entry.isIntersecting)
-                    setp19(entry.isIntersecting)
-
+                    const isIntersecting = entry.isIntersecting;
+        
+                    // Atualizando os estados para refletir se os elementos estão em vista
+                    setImageIsInView(isIntersecting);
+                    setImageIsInViewtwo(isIntersecting);
+                    setImageIsInViewthree(isIntersecting);
+                    setImageIsInViewfour(isIntersecting);
+                    setImageIsInViewfive(isIntersecting);
+                    setImageIsInViewsix(isIntersecting);
+                    setImageIsInViewseven(isIntersecting);
+                    setCoproductorsInView(isIntersecting);
+                    setp(isIntersecting);
+                    setp2(isIntersecting);
+                    setp3(isIntersecting);
+                    setp4(isIntersecting);
+                    setp5(isIntersecting);
+                    setp6(isIntersecting);
+                    setp7(isIntersecting);
+                    setp8(isIntersecting);
+                    setp9(isIntersecting);
+                    setp10(isIntersecting);
+                    setp11(isIntersecting);
+                    setp12(isIntersecting);
+                    setp13(isIntersecting);
+                    setp14(isIntersecting);
+                    setp15(isIntersecting);
+                    setp16(isIntersecting);
+                    setp17(isIntersecting);
+                    setp18(isIntersecting);
+                    setp19(isIntersecting);
                 },
                 {
-                    root: null, // Visibilidade relativa à viewport
+                    root: viewPort.current, // Visibilidade relativa à viewport
                     rootMargin: '0px', // Sem margem adicional
-                    threshold: 0.1, // Considera visível se 10% da div estiver visível
+                    threshold: 0.5, // Considera visível se 10% da div estiver visível
                 }
             );
-    
-            // Inicia a observação do header
-            
-            if(coproductors.current){
-                observer.observe(coproductors.current)
-            }
-            if(text.current){
-                observer.observe(text.current)
-            }
-            if(text2.current){
-                observer.observe(text2.current)
-            }
-            if(text3.current){
-                observer.observe(text3.current)
-            }
-            if(text4.current){
-                observer.observe(text4.current)
-            }
-            if(text5.current){
-                observer.observe(text5.current)
-            }
-            if(text6.current){
-                observer.observe(text6.current)
-            }
-            if(text7.current){
-                observer.observe(text7.current)
-            }
-            if(text8.current){
-                observer.observe(text8.current)
-            }
-            if(text9.current){
-                observer.observe(text9.current)
-            }
-            if(text10.current){
-                observer.observe(text10.current)
-            }
-            if(text11.current){
-                observer.observe(text11.current)
-            }
-            if(text12.current){
-                observer.observe(text12.current)
-            }
-            if(text13.current){
-                observer.observe(text13.current)
-            }
-            if(text14.current){
-                observer.observe(text14.current)
-            }
-            if(text15.current){
-                observer.observe(text15.current)
-            }
-            if(text16.current){
-                observer.observe(text16.current)
-            }
-            if(text17.current){
-                observer.observe(text17.current)
-            }
-            if(text18.current){
-                observer.observe(text18.current)
-            }
-            if(text19.current){
-                observer.observe(text19.current)
-            }
-
-            if (imageRef.current) {
-                observer.observe(imageRef.current);
-            }
-            if (imageReftwo.current){
-                observer.observe(imageReftwo.current);
-            }
-            if(imageRefthree.current){
-                observer.observe(imageRefthree.current);
-            }
-            if(imageReffour.current){
-                observer.observe(imageReffour.current);
-            }
-            if(imageReffive.current){
-                observer.observe(imageReffive.current);
-            }
-            if(imageRefsix.current){
-                observer.observe(imageRefsix.current);
-            }
-            if(imageRefseven.current){
-                observer.observe(imageRefseven.current)
-            }
-
-            // Cleanup do observer quando o componente for desmontado
+        
+            // Observando os elementos de imagem
+            if (imageRef.current) observer.observe(imageRef.current);
+            if (imageReftwo.current) observer.observe(imageReftwo.current);
+            if (imageRefthree.current) observer.observe(imageRefthree.current);
+            if (imageReffour.current) observer.observe(imageReffour.current);
+            if (imageReffive.current) observer.observe(imageReffive.current);
+            if (imageRefsix.current) observer.observe(imageRefsix.current);
+            if (imageRefseven.current) observer.observe(imageRefseven.current);
+        
+            // Observando os elementos de texto
+            if (text.current) observer.observe(text.current);
+            if (text2.current) observer.observe(text2.current);
+            if (text3.current) observer.observe(text3.current);
+            if (text4.current) observer.observe(text4.current);
+            if (text5.current) observer.observe(text5.current);
+            if (text6.current) observer.observe(text6.current);
+            if (text7.current) observer.observe(text7.current);
+            if (text8.current) observer.observe(text8.current);
+            if (text9.current) observer.observe(text9.current);
+            if (text10.current) observer.observe(text10.current);
+            if (text11.current) observer.observe(text11.current);
+            if (text12.current) observer.observe(text12.current);
+            if (text13.current) observer.observe(text13.current);
+            if (text14.current) observer.observe(text14.current);
+            if (text15.current) observer.observe(text15.current);
+            if (text16.current) observer.observe(text16.current);
+            if (text17.current) observer.observe(text17.current);
+            if (text18.current) observer.observe(text18.current);
+            if (text19.current) observer.observe(text19.current);
+        
+            // Observando coprodutores
+            if (coproductors.current) observer.observe(coproductors.current);
+        
+            // Cleanup para desobservar os elementos quando o componente for desmontado
             return () => {
-                if(text.current){
-                    observer.unobserve(text.current)
-                }
-                if(text2.current){
-                    observer.unobserve(text2.current)
-                }
-                if(text3.current){
-                    observer.unobserve(text3.current)
-                }
-                if(text4.current){
-                    observer.unobserve(text4.current)
-                }
-                if(text5.current){
-                    observer.unobserve(text5.current)
-                }
-                if(text6.current){
-                    observer.unobserve(text6.current)
-                }
-                if(text7.current){
-                    observer.unobserve(text7.current)
-                }
-                if(text8.current){
-                    observer.unobserve(text8.current)
-                }
-                if(text9.current){
-                    observer.unobserve(text9.current)
-                }
-                if(text10.current){
-                    observer.unobserve(text10.current)
-                }
-                if(text11.current){
-                    observer.unobserve(text11.current)
-                }
-                if(text12.current){
-                    observer.unobserve(text12.current)
-                }
-                if(text13.current){
-                    observer.unobserve(text13.current)
-                }
-                if(text14.current){
-                    observer.unobserve(text14.current)
-                }
-                if(text15.current){
-                    observer.unobserve(text15.current)
-                }
-                if(text16.current){
-                    observer.unobserve(text16.current)
-                }
-                if(text17.current){
-                    observer.unobserve(text17.current)
-                }
-                if(text18.current){
-                    observer.unobserve(text18.current)
-                }
-                if(text19.current){
-                    observer.unobserve(text19.current)
-                }
-                if(coproductors.current){
-                    observer.unobserve(coproductors.current)
-                }
-                if (imageRef.current) {
-                    observer.unobserve(imageRef.current);
-                }
-                if (imageReftwo.current) {
-                    observer.unobserve(imageReftwo.current);
-                }
-                if (imageRefthree.current) {
-                    observer.unobserve(imageRefthree.current);
-                }
-                if (imageReffour.current) {
-                    observer.unobserve(imageReffour.current);
-                }
-                if (imageReffive.current) {
-                    observer.unobserve(imageReffive.current);
-                }
-                if (imageRefsix.current) {
-                    observer.unobserve(imageRefsix.current);
-                }
-                if (imageRefsix.current) {
-                    observer.unobserve(imageRefsix.current);
-                }
-                
+                if (imageRef.current) observer.unobserve(imageRef.current);
+                if (imageReftwo.current) observer.unobserve(imageReftwo.current);
+                if (imageRefthree.current) observer.unobserve(imageRefthree.current);
+                if (imageReffour.current) observer.unobserve(imageReffour.current);
+                if (imageReffive.current) observer.unobserve(imageReffive.current);
+                if (imageRefsix.current) observer.unobserve(imageRefsix.current);
+                if (imageRefseven.current) observer.unobserve(imageRefseven.current);
+        
+                if (text.current) observer.unobserve(text.current);
+                if (text2.current) observer.unobserve(text2.current);
+                if (text3.current) observer.unobserve(text3.current);
+                if (text4.current) observer.unobserve(text4.current);
+                if (text5.current) observer.unobserve(text5.current);
+                if (text6.current) observer.unobserve(text6.current);
+                if (text7.current) observer.unobserve(text7.current);
+                if (text8.current) observer.unobserve(text8.current);
+                if (text9.current) observer.unobserve(text9.current);
+                if (text10.current) observer.unobserve(text10.current);
+                if (text11.current) observer.unobserve(text11.current);
+                if (text12.current) observer.unobserve(text12.current);
+                if (text13.current) observer.unobserve(text13.current);
+                if (text14.current) observer.unobserve(text14.current);
+                if (text15.current) observer.unobserve(text15.current);
+                if (text16.current) observer.unobserve(text16.current);
+                if (text17.current) observer.unobserve(text17.current);
+                if (text18.current) observer.unobserve(text18.current);
+                if (text19.current) observer.unobserve(text19.current);
+        
+                if (coproductors.current) observer.unobserve(coproductors.current);
             };
         }, []);
+        
         const profileClasses = `w-12 h-12 rounded-full object-cover border-2 border-white ${isCoproductorsInView ? 'animate-fade-up': 'opacity-0'}`
         const p1Classes = ``
         const p2Classes = ``
         const p3Classes = ``
         const p4Classes = ``
     return(
-        <div className="flex flex-col gap-4 justify-center items-center text-center px-4 sm:px-6 lg:px-8 mt-10 sm:mt-20">
+        <div ref={viewPort}  className="flex flex-col gap-4 justify-center items-center text-center px-4 sm:px-6 lg:px-8 mt-10 sm:mt-20">
                 <div style={{ backgroundColor: 'rgba(95, 194, 238,4 0.5)'}} className="rounded-full w-30 text-center">
                     <span className="font-faktum text-[#5fc2ee] text-sm p-2 sm:text-base">PERFORMANCE</span>
                 </div>
                 <h2  className={`font-faktum text-2xl sm:text-3xl md:text-4xl lg:text-5xl `}>
                     Tecnologia para <span className="text-[#5fc2ee]">economizar o seu tempo</span>
                 </h2>
-                <div className='grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
+                <div ref={viewPort} className='grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
                     {/*DASHBOARD EM TEMPO REAL */}
                     <div className='text-left space-y-4'>
 
@@ -308,7 +206,7 @@ export default function Performance(){
                             <p ref={text5}className={`font-faktum text-xl sm:text-2xl text-[#1f073b] ${p5 ? "animate-fade-up":"opacity-0"}`}>Fechamento</p>
                             <p ref={text6}className={`font-faktum text-xl sm:text-2xl text-[#1f073b] ${p6 ? "animate-fade-up":"opacity-0"}`}>mensal em dia.</p>
                             
-                            <Image src="fechamento_mensal.svg" ref={imageReffour} className={`${isImageInViewfour ? "animate-fade-up": "opacity-0"}`}  width={100} height={100} alt="icon"/>
+                            <Image src="fechamento_mensal.svg" ref={imageReffour} className={`${isImageInViewfour ? "animate-fade-up": "opacity-0"}`}  width={250} height={250} alt="icon"/>
                             
                             
                             <p ref={text7} className={`font-faktum text-lg sm:text-xl text-[#1f073b]${p7 ?"animate-fade-up":"opacity-0"}`}>Sem precisar enviar</p>
@@ -321,12 +219,17 @@ export default function Performance(){
                             <p ref={text12}className={`font-faktum text-[#d93d8d] text-3xl sm:text-4xl ${p12 ? "animate-fade-up":"opacity-0"}`}>Dropshipping</p>
                         </div>
                         
-                        <div className="bg-white rounded-xl border-2 p-4 flex flex-col items-center">
-                            <p ref={text13}className={`font-faktum text-2xl sm:text-3xl text-[#d93d8d] flex items-center ${p13 ? "animate-fade-up":"opacity-0"}`}><CircleCheck color='#ffff' fill='#01b169' size={24} className="mr-2"/>Cancelamento ou</p>
-                            <p ref={text14}className={`font-faktum text-2xl sm:text-3xl text-[#d93d8d] flex items-center ${p14 ? "animate-fade-up":"opacity-0"}`}><CircleX fill='#d62e85' color='#ffff' size={24} className="mr-2"/>devolução autmático:</p>
-                            <p  ref={text15} className={`font-faktum text-xl sm:text-2xl text-[#1f073b] flex items-center${p15 ? "animate-fade-up":"opacity-0"}`}><CircleCheck color='#ffff' fill='#01b169' size={24} className="mr-2"/>Quando uma venda é reembolsada o</p>
-                            <p ref={text16} className={`font-faktum text-xl sm:text-2xl text-[#1f073b] flex items-center${p15 ? "animate-fade-up":"opacity-0"}`}><CircleCheck color='#ffff' fill='#01b169' size={24} className="mr-2"/>Ameii Cancela!</p>
+                        <div className="bg-white rounded-xl border-2 p-4 flex flex-row items-center">
+                        <Image src={'checks.svg'} alt="checks icons" width={50} height={50}/>
+                            <div className="flex flex-col  gap-6">
+                            <p ref={text13}className={`font-faktum text-xl sm:text-xl text-[#d93d8d] flex items-center ${p13 ? "animate-fade-up":"opacity-0"}`}>Cancelamento ou devolução automático:</p>
+                            
+                            <p  ref={text14} className={`font-faktum text-xl sm:text-xl text-[#1f073b] flex items-center${p14 ? "animate-fade-up":"opacity-0"}`}>Quando uma venda é reembolsada o Ameii Cancela!</p>
+                           
+                            </div>
+                           
                         </div>
+
                         
                     </div>
                     <div className='text-left space-y-4'>

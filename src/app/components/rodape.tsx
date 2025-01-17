@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function Rodape() {
   return (
     <>
-      <footer className="container mx-auto px-6 py-12">
+      <footer className="container mx-auto px-6 py-12 mt-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           {/* Logo and Description Section */}
           <div className="lg:col-span-4">
