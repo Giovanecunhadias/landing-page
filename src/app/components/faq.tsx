@@ -16,7 +16,7 @@ export default function Faq() {
       <>
         <div className="sticky top-8">
           <div
-            style={{ backgroundColor: "rgba(95, 194, 238, 0.5)" }}
+            style={{ backgroundColor: "rgba(95, 194, 238, 0.1)" }}
             className="rounded-full w-16 h-8 flex items-center justify-center mb-6"
           >
             <span className="font-faktum text-[#5fc2ee] text-sm">FAQ</span>
@@ -59,7 +59,7 @@ export default function Faq() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-16 max-w-6xl">
+    <div className="container mx-auto px-4 py-16 max-w-6xl py-32">
       <div className="flex flex-col lg:flex-row gap-16">
         {/* Left column with FAQ content */}
         <div className="w-full lg:w-1/3">
