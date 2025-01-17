@@ -3,7 +3,6 @@ import configureimage from '../assets/image/3.png'
 import automatizeimage from '../assets/image/2.png'
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
-import { config } from 'process';
 export default function Features() {
 
 
