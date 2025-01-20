@@ -5,7 +5,6 @@ import InfinityList from "./infinity_list"
 import Nav from './responsive_navbar'
 import Faq from './faq'
 import Ratings from './ratings'
-import Mockup from './component_phone'
 import Garantia from './garantia'
 import WhatsappButton from './wpBtn/whatsapp_button'
 import Features from './features'
@@ -13,7 +12,6 @@ import Integrations from './Integrations'
 import Proposal from './proposal'
 import Rodape from './rodape'
 import InfiniteScroll from './scrollhorizontalanimation'
-import Marquee from '@/components/ui/marquee'
 import { HeaderPhone } from './HeaderPhone'
 import Performance from './performance'
 import { useEffect, useRef, useState } from 'react'
@@ -72,9 +70,9 @@ export default function Start() {
                     </p>
                 </div>
                 
-                <div ref={headerRef} className="flex flex-col w-full h-[36.75rem] overflow-hidden  relative">
+                <div ref={headerRef} className="flex h-screen flex-col w-full  overflow-hidden  relative">
                     <HeaderPhone/>
-                    <div className='min-h-[4px] absolute bottom-0 w-screen bg-[linear-gradient(90deg,_rgb(95,_194,_238)_0%,_rgb(217,_61,_141)_100%)]' ></div>
+                    <div className='min-h-[4px]  absolute bottom-0 w-screen bg-[linear-gradient(90deg,_rgb(95,_194,_238)_0%,_rgb(217,_61,_141)_100%)]' ></div>
                 </div>
             </div>
 

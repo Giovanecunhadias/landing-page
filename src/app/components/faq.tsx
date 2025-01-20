@@ -14,7 +14,7 @@ export default function Faq() {
   const FaqContent = () => {
     return (
       <>
-        <div className="sticky top-8">
+        <div className="sticky top-8 py-4">
           <div
             style={{ backgroundColor: "rgba(95, 194, 238, 0.1)" }}
             className="rounded-full w-16 h-8 flex items-center justify-center mb-6"
@@ -59,7 +59,7 @@ export default function Faq() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-16 max-w-6xl py-32">
+    <div className="container mx-auto px-4 py-44 max-w-6xl ">
       <div className="flex flex-col lg:flex-row gap-16">
         {/* Left column with FAQ content */}
         <div className="w-full lg:w-1/3">
@@ -75,7 +75,7 @@ export default function Faq() {
                   <span className="font-faktum text-[#d93d8d]">01.</span> Quem pode contratar Ameii
                 </span>
               </AccordionTrigger>
-              <AccordionContent className="text-[#1f073b] font-faktum text-sm lg:text-md">
+              <AccordionContent className="text-[#1f073b]  font-faktum text-sm lg:text-md">
                 O Spedy é uma plataforma voltada para negócios digitais. Se você é infoprodutor, coprodutor, afiliado, ou se você tem um software (ERP / SaaS), o Spedy é para você.
               </AccordionContent>
             </AccordionItem>
