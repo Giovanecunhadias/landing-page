@@ -64,9 +64,9 @@ export default function Start() {
                         Vendas com <span className="text-[#d93d8d]">a Ameii.</span>
                     </h1>
                     
-                    <p className="flex items-center text-white font-arial mt-4 text-sm sm:text-base lg:text-lg">
+                    <p className="flex items-center text-white font-arial mt-4 gap-2  text-sm sm:text-base lg:text-lg">
                         Integre <MoveRight color={arrowColor} className="mx-1 w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" /> Venda <MoveRight color={arrowColor} className="mx-1 w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" /> 
-                        <span className="text-[#d93d8d]">O resto é com o Ameii</span>
+                        <span className="text-[#d93d8d] font-faktum">O resto é com o Ameii</span>
                     </p>
                 </div>
                 

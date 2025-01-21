@@ -21,7 +21,7 @@ export function HeaderPhone() {
           objectFit={windowWidth > 1276 ? 'cover' : 'cover'}
         />
 
-        <div className="absolute flex flex-col items-center lg:w-full gap-[0.75rem] left-2/4 -translate-x-2/4 top-[45%]">
+        <div className="absolute flex flex-col items-center w-full gap-[0.75rem] left-2/4 -translate-x-2/4 top-[45%]">
           <HeaderPhoneNotificationOne />
           <HeaderPhoneNotificationTwo />
         </div>

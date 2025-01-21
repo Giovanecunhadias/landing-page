@@ -177,8 +177,8 @@ export default function Performance(){
         const p3Classes = ``
         const p4Classes = ``
     return(
-        <div   className="flex flex-col gap-4 justify-center items-center text-center px-4 sm:px-6 lg:px-8 mt-10 sm:mt-20">
-                <div style={{ backgroundColor: 'rgba(95, 194, 238,4 0.5)'}} className="rounded-full w-30 text-center">
+        <div   className="flex flex-col gap-4 justify-center items-center text-center px-4 sm:px-6 lg:px-8 mt-20">
+                <div className="rounded-full bg-[#5fc2ee]/20 w-30 text-center">
                     <span className="font-faktum text-[#5fc2ee] text-sm p-2 sm:text-base">PERFORMANCE</span>
                 </div>
                 <h2  className={`font-faktum text-2xl sm:text-3xl md:text-4xl lg:text-5xl `}>
@@ -220,12 +220,12 @@ export default function Performance(){
                         </div>
                         
                         <div className="bg-white rounded-xl border-2 p-4 flex px-6 flex-row items-center">
-                        <Image src={'checks.svg'} alt="checks icons" className="ml-4" width={40} height={35}/>
+                        <Image src={'checks.svg'} alt="checks icons" className="lg:ml-4" width={50} height={50}/>
                             <div className="flex flex-col ">
                             
-                            <p ref={text13}className={`font-faktum text-2xl sm:text-2xl text-[#d93d8d] flex items-center ${p13 ? "animate-fade-in":"opacity-0"}`}>Cancelamento ou devolução automática:</p>
+                            <p ref={text13}className={`font-faktum lg:text-2xl text-xl text-[#d93d8d] flex items-center ${p13 ? "animate-fade-in":"opacity-0"}`}>Cancelamento ou devolução automática:</p>
                             
-                            <p  ref={text14} className={`font-faktum text-2xl sm:text-2xl text-[#1f073b] flex items-center${p14 ? "animate-fade-in":"opacity-0"}`}>Quando uma venda é reembolsada a Ameii Cancela!</p>
+                            <p  ref={text14} className={`font-faktum lg:text-2xl text-xl text-[#1f073b] flex items-center${p14 ? "animate-fade-in":"opacity-0"}`}>Quando uma venda é reembolsada a Ameii Cancela!</p>
                             
                             </div>
                            

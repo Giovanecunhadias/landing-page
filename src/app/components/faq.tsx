@@ -71,8 +71,9 @@ export default function Faq() {
           <Accordion type="single" collapsible className="w-full space-y-4">
             <AccordionItem value="item-1">
               <AccordionTrigger className="text-[#1f073b] font-faktum text-lg lg:text-xl">
-                <span>
-                  <span className="font-faktum text-[#d93d8d]">01.</span> Quem pode contratar Ameii
+                <span className="flex gap-2">
+                  <span className="font-faktum text-[#d93d8d]">01.</span>
+                  <span className="text-start"> Quem pode contratar Ameii</span>
                 </span>
               </AccordionTrigger>
               <AccordionContent className="text-[#1f073b]  font-faktum text-sm lg:text-md">
@@ -82,8 +83,10 @@ export default function Faq() {
 
             <AccordionItem value="item-2">
               <AccordionTrigger className="text-[#1f073b] font-faktum text-lg lg:text-xl">
-                <span>
-                  <span className="font-faktum text-[#d93d8d]">02.</span> Quais são os tipos de notas que o Ameii emite ?
+              <span className="flex gap-2">
+                  <span className="font-faktum text-[#d93d8d]">02.</span>
+                  
+                  <span className="text-start"> Quais são os tipos de notas que o Ameii emite ? </span>
                 </span>
               </AccordionTrigger>
               <AccordionContent className="text-[#1f073b] font-faktum text-sm lg:text-md">
@@ -93,8 +96,9 @@ export default function Faq() {
 
             <AccordionItem value="item-3">
               <AccordionTrigger className="text-[#1f073b] font-faktum text-lg lg:text-xl">
-                <span>
-                  <span className="font-faktum text-[#d93d8d]">03.</span> O que eu preciso para emitir notas fiscais?
+              <span className="flex gap-2">
+                  <span className="font-faktum text-[#d93d8d]">03.</span>
+                  <span className="text-start"> O que eu preciso para emitir notas fiscais? </span>
                 </span>
               </AccordionTrigger>
               <AccordionContent className="text-[#1f073b] font-faktum text-sm lg:text-md">
@@ -104,8 +108,9 @@ export default function Faq() {
 
             <AccordionItem value="item-4">
               <AccordionTrigger className="text-[#1f073b] font-faktum text-lg lg:text-xl">
-                <span>
-                  <span className="font-faktum text-[#d93d8d]">04.</span> Quais cidades são atendidas pelo Ameii?
+              <span className="flex gap-2">
+                  <span className="font-faktum text-[#d93d8d]">04.</span> 
+                  <span className="text-start">Quais cidades são atendidas pelo Ameii? </span>
                 </span>
               </AccordionTrigger>
               <AccordionContent className="text-[#1f073b] font-faktum text-sm lg:text-md">
@@ -115,8 +120,9 @@ export default function Faq() {
 
             <AccordionItem value="item-5">
               <AccordionTrigger className="text-[#1f073b] font-faktum text-lg lg:text-xl">
-                <span>
-                  <span className="font-faktum text-[#d93d8d]">05.</span> Posso integrar o Ameii com qualquer sistema via API?
+              <span className="flex gap-2">
+                  <span className="font-faktum text-[#d93d8d]">05.</span> 
+                  <span className="text-start">Posso integrar o Ameii com qualquer sistema via API? </span>
                 </span>
               </AccordionTrigger>
               <AccordionContent className="text-[#1f073b] font-faktum text-sm lg:text-md">
@@ -126,8 +132,9 @@ export default function Faq() {
 
             <AccordionItem value="item-6">
               <AccordionTrigger className="text-[#1f073b] font-faktum text-lg lg:text-xl">
-                <span>
-                  <span className="font-faktum text-[#d93d8d]">06.</span> O Ameii cobra taxa de adesão?
+              <span className="flex gap-2">
+                  <span className="font-faktum text-[#d93d8d]">06.</span>
+                  <span className="text-start"> O Ameii cobra taxa de adesão? </span>
                 </span>
               </AccordionTrigger>
               <AccordionContent className="text-[#1f073b] font-faktum text-sm lg:text-md">
@@ -137,8 +144,9 @@ export default function Faq() {
 
             <AccordionItem value="item-7">
               <AccordionTrigger className="text-[#1f073b] font-faktum text-lg lg:text-xl">
-                <span>
-                  <span className="font-faktum text-[#d93d8d]">07.</span> Como funciona a garantia de satisfação?
+              <span className="flex gap-2">
+                  <span className="font-faktum text-[#d93d8d]">07.</span> 
+                  <span className="text-start">Como funciona a garantia de satisfação? </span>
                 </span>
               </AccordionTrigger>
               <AccordionContent className="text-[#1f073b] font-faktum text-sm lg:text-md">

@@ -3,7 +3,7 @@ import { Sparkle, Check, MoveRight, Undo2, X } from 'lucide-react'
 
 export default function Plans() {
   return (
-    <div className="container mx-auto px-4 py-8 md:py-16">
+    <div className="container mx-auto px-4 py-16">
       <div className='flex flex-col items-center justify-center mb-8'>
         <div className='text-center rounded-full w-full max-w-xs px-4 py-2' style={{backgroundColor:'rgba(217, 61, 141, 0.5)'}}>
           <span className='font-faktum text-[#d93d8d] text-sm md:text-base'>PLANOS & PREÇOS</span>

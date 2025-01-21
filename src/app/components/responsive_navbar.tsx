@@ -3,7 +3,7 @@
 "use client"
 import React, { useState } from "react"
 import {CircleUserRound } from "lucide-react"
-import logo from  "../assets/image/LogoWhite.png"
+import logo from  "../assets/image/logo3.png"
 import Link from "next/link" 
 import Image from "next/image"
 
@@ -64,7 +64,7 @@ export default function Nav({ isInView }: { isInView: boolean }) {
 
 
                         <div className="text-x1 font-bold">
-                            <Image src={logo} width={50} height={50} alt="" />
+                            <Image src={logo} width={35} height={35} alt="" />
                         </div>
 
                         
