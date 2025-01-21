@@ -21,9 +21,15 @@ export default {
   			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
 			'bolinha-right': 'bolinha-right 2s ease-out infinite',
 			'bolinha-left': 'bolinha-left 2s ease-out infinite',
-			"spin-slow": "spin 6s linear infinite"
+			"spin-slow": "spin 6s linear infinite",
+			pulseScale: 'pulseScale 1s ease-in-out infinite'
   		},
   		keyframes: {
+			pulseScale:{
+				'0%': { transform: 'scale3d(1, 1, 1)' },
+          		'50%': { transform: 'scale3d(1.05, 1.05, 1.05)' },
+          		'100%': { transform: 'scale3d(1, 1, 1)' },
+			},
   			bounce: {
   				'0%, 100%': {
   					transform: 'translateY(0)'

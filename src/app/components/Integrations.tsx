@@ -10,7 +10,8 @@ export default function Integrations() {
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-faktum">Encaixe Ameii na sua operação</h2>
                 <p className="font-faktum text-lg sm:text-xl md:text-2xl lg:text-3xl text-white mt-2">Integre com mais de 40 plataformas do mercado.</p>
                 <LinesFoots/>
-                <button className="bg-[#D93D8D] border rounded-2xl w-32 h-8 sm:w-36 sm:h-10 text-white font-faktum flex items-center justify-center gap-2 mt-4 text-sm sm:text-base">
+                <button className="bg-[#D93D8D] border border-[#D93D8D]
+                rounded-2xl w-32 h-8 sm:w-36 sm:h-10 text-white font-faktum flex items-center justify-center gap-2 mt-4 text-sm sm:text-base transform transition-transform duration-300 hover:scale-90">
                     Ver todas
                     <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
                 </button>

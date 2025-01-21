@@ -39,7 +39,7 @@ export default function Faq() {
                   Dúvidas? Fale Conosco
                 </p>
                 <p className="text-[#1f073b] font-faktum font-bold text-sm">
-                  contato@spedy.com.br
+                  contato@Ameii.com.br
                 </p>
               </div>
             </div>
@@ -59,7 +59,7 @@ export default function Faq() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-44 max-w-6xl ">
+    <div className="container mx-auto px-4 py-4 lg:py-44 max-w-6xl ">
       <div className="flex flex-col lg:flex-row gap-16">
         {/* Left column with FAQ content */}
         <div className="w-full lg:w-1/3">
@@ -76,7 +76,7 @@ export default function Faq() {
                 </span>
               </AccordionTrigger>
               <AccordionContent className="text-[#1f073b]  font-faktum text-sm lg:text-md">
-                O Spedy é uma plataforma voltada para negócios digitais. Se você é infoprodutor, coprodutor, afiliado, ou se você tem um software (ERP / SaaS), o Spedy é para você.
+                O Ameii é uma plataforma voltada para negócios digitais. Se você é infoprodutor, coprodutor, afiliado, ou se você tem um software (ERP / SaaS), o Ameii é para você.
               </AccordionContent>
             </AccordionItem>
 
@@ -87,7 +87,7 @@ export default function Faq() {
                 </span>
               </AccordionTrigger>
               <AccordionContent className="text-[#1f073b] font-faktum text-sm lg:text-md">
-                O Spedy é uma plataforma voltada para negócios digitais. Se você é infoprodutor, coprodutor, afiliado, ou se você tem um software (ERP / SaaS), o Spedy é para você.
+                O Ameii é uma plataforma voltada para negócios digitais. Se você é infoprodutor, coprodutor, afiliado, ou se você tem um software (ERP / SaaS), o Ameii é para você.
               </AccordionContent>
             </AccordionItem>
 
@@ -120,7 +120,7 @@ export default function Faq() {
                 </span>
               </AccordionTrigger>
               <AccordionContent className="text-[#1f073b] font-faktum text-sm lg:text-md">
-                Sim, desde que você esteja utilizando um plano que ofereça o acesso a nossa API de integração. Para as plataformas que o Spedy possui integração nativa, você não precisará de acesso a API. Consulte a Documentação de Referência da API.
+                Sim, desde que você esteja utilizando um plano que ofereça o acesso a nossa API de integração. Para as plataformas que o Ameii possui integração nativa, você não precisará de acesso a API. Consulte a Documentação de Referência da API.
               </AccordionContent>
             </AccordionItem>
 

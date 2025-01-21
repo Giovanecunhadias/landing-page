@@ -39,8 +39,8 @@ export default function Nav({ isInView }: { isInView: boolean }) {
     const navLinks = (
         <>
         <div className="flex-row flex gap-4 justify-end">
-            <Link href={""} className={`flex flex-row border border-1 px-6 gap-2  items-center font-faktum rounded-full p-2 ${isInView ? "text-white": "text-[#1f073b] border-[#1f073b]"}`}><CircleUserRound className="size-4"/>Entrar</Link>
-            <Link href={""} className={`${navStartNow}`}><p  >Comece já</p></Link>
+            <Link href={""} className={`flex flex-row border border-1 px-6 gap-2  items-center font-faktum rounded-full p-2 ${isInView ? "text-white": "text-[#1f073b] border-[#1f073b]"} hover:transform transition-transform duration-300 hover:scale-90 hover:bg-[#1f073b] hover:text-white`}><CircleUserRound className="size-4"/>Entrar</Link>
+            <Link href={""} className={`${navStartNow} hover:transform transition-transform duration-300 hover:scale-90 `}><p  >Comece já</p></Link>
         </div>
             
         </>

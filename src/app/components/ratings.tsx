@@ -12,13 +12,13 @@ export default function Ratings() {
             </div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-faktum mt-2 mb-12">+ de 6 milhões de notas emitidas</h2>
 
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-7xl'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 py-24 gap-6 w-full max-w-7xl relative '>
                 {[
                     { name: 'Leonardo Fittipaldi', role: 'Infoprodutor', image: firstprofile, testimonial: 'Ameii foi a escolha certa. Atendimento impecável, consultor educado, nos ajudou a configurar e tirar dúvidas. Plataforma de fácil usabilidade e preço super justo. Super recomendo, tem agilizado muito nosso trabalho.' },
-                    { name: 'Ronsimar Rigoni', role: 'Coprodutor', image: secondprofile, testimonial: 'Spedy simplificou minha vida, não preciso emitir notas manualmente. Integração e split automáticos, cálculos corretos de coprodução. Suporte atende prontamente. Feliz com Spedy, tirei um peso das costas.' },
-                    { name: 'Dr. Douglas Garcia', role: 'Fisioterapeuta e Infoprodutor', image: thirdprofile, testimonial: 'Feliz com Spedy. Emitir notas manualmente era desafiador e demorado. Com um clique, vendas de infoprodutos viram notas, otimizando tempo e mantendo contabilidade em dia. Suporte rápido e atencioso.' }
+                    { name: 'Ronsimar Rigoni', role: 'Coprodutor', image: secondprofile, testimonial: 'Ameii simplificou minha vida, não preciso emitir notas manualmente. Integração e split automáticos, cálculos corretos de coprodução. Suporte atende prontamente. Feliz com Ameii, tirei um peso das costas.' },
+                    { name: 'Dr. Douglas Garcia', role: 'Fisioterapeuta e Infoprodutor', image: thirdprofile, testimonial: 'Feliz com Ameii. Emitir notas manualmente era desafiador e demorado. Com um clique, vendas de infoprodutos viram notas, otimizando tempo e mantendo contabilidade em dia. Suporte rápido e atencioso.' }
                 ].map((profile, index) => (
-                    <div key={index} className='bg-white rounded-xl p-6 shadow-lg'>
+                    <div key={index} className={`absolute z-10 w-[30%] shadow-xl   bg-white rounded-xl bottom-[-200px] p-6  hover:-translate-y-1 hover:scale-100 duration-300 ${index === 0 ? 'left-0' : index === 1 ? 'left-1/2 -translate-x-1/2' : 'right-0'}`}>
                         <Rating value={5} className='space-x-2 mb-4' cancel={false} style={{ color: '#ffbc00' }}/>
                         <p className='text-[#1f073b] font-faktum text-sm sm:text-base lg:text-lg mb-4'>
                             {profile.testimonial}

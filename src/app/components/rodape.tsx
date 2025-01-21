@@ -12,15 +12,15 @@ export default function Rodape() {
       <footer className="container mx-auto px-6 py-16 sm:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           {/* Logo and Description Section */}
-          <div className="lg:col-span-4">
+          <div className="lg:col-span-4 justify-center flex flex-col text-center items-center">
             <Image
               src="/favicon.ico"
-              alt="Spedy"
+              alt="Ameii"
               width={150}
               height={50}
               className="mb-6"
             />
-            <p className="text-gray-500 mb-6 text-sm leading-relaxed">
+            <p className="text-gray-500 justify-center mb-6 text-sm leading-relaxed">
               Minimizamos o trabalho operacional do seu negócio, conectando na
               sua plataforma de pagamento e emitindo as notas fiscais
               automaticamente.
@@ -50,10 +50,10 @@ export default function Rodape() {
           {/* Navigation Sections */}
           <div className="lg:col-span-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* O SPEDY Section */}
-              <div>
+              {/* O Ameii Section */}
+              <div className="flex flex-col gap-2">
                 <h2 className={titleClasses}>O AMEII</h2>
-                <nav className="flex flex-col space-y-2">
+                <nav className="flex flex-col gap-2">
                   <Link href="/" className={pClasses}>
                     Início
                   </Link>
@@ -88,7 +88,7 @@ export default function Rodape() {
               </div>
 
               {/* SUPORTE Section */}
-              <div>
+              <div className="flex flex-col gap-2">
                 <h2 className={titleClasses}>SUPORTE</h2>
                 <nav className="flex flex-col space-y-2">
                   <Link href="/" className={pClasses}>

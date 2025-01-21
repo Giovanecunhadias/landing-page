@@ -14,10 +14,10 @@ export default function Proposal() {
                 </div>
 
                 <div className="flex flex-col md:flex-row items-center text-center justify-center gap-4 mt-6">
-                    <button className="bg-[#d93d8d] px-4 py-2 md:px-6 md:py-3 rounded-full text-white font-faktum text-sm md:text-base">
+                    <button className="bg-[#d93d8d] px-4 py-2 md:px-6 md:py-3 rounded-full text-white font-faktum text-sm md:text-base transform transition-transform duration-300 hover:scale-90">
                         Começar agora
                     </button>
-                    <button className="border-[#ffff] border-solid border-2 px-4 py-2 md:px-6 md:py-3 rounded-full text-white font-faktum text-sm md:text-base">
+                    <button className="border-[#ffff] border-solid border-2 px-4 py-2 md:px-6 md:py-3 rounded-full text-white font-faktum text-sm md:text-base transform transition-transform duration-300 hover:scale-90">
                         Fale Conosco
                     </button>
                 </div>

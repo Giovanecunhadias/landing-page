@@ -60,7 +60,7 @@ export default function Start() {
             ">
                 <div className="flex flex-col items-center text-center">
                     <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-faktum animate-delay-0 animate-duration-10000 animate-fade-down">
-                        Foque <span className="text-[#d93d8d]">em vender</span> e deixe as<br className="hidden sm:inline" />
+                        Foque <span className="text-[#d93d8d]">em vender</span> e deixe as <br className="hidden sm:inline" />
                         Vendas com <span className="text-[#d93d8d]">a Ameii.</span>
                     </h1>
                     

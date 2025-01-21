@@ -171,13 +171,13 @@ export default function Performance(){
             };
         }, []);
         
-        const profileClasses = `w-12 h-12 rounded-full object-cover border-2 border-white ${isCoproductorsInView ? 'animate-fade-up': 'opacity-0'}`
+        const profileClasses = `w-12 h-12 rounded-full object-cover border-2 border-white ${isCoproductorsInView ? 'animate-fade-in': 'opacity-0'}`
         const p1Classes = ``
         const p2Classes = ``
         const p3Classes = ``
         const p4Classes = ``
     return(
-        <div ref={viewPort}  className="flex flex-col gap-4 justify-center items-center text-center px-4 sm:px-6 lg:px-8 mt-10 sm:mt-20">
+        <div   className="flex flex-col gap-4 justify-center items-center text-center px-4 sm:px-6 lg:px-8 mt-10 sm:mt-20">
                 <div style={{ backgroundColor: 'rgba(95, 194, 238,4 0.5)'}} className="rounded-full w-30 text-center">
                     <span className="font-faktum text-[#5fc2ee] text-sm p-2 sm:text-base">PERFORMANCE</span>
                 </div>
@@ -189,43 +189,44 @@ export default function Performance(){
                     <div className='text-left space-y-4'>
 
                         <div className="bg-white rounded-xl border-2 p-4 flex flex-col items-center">
-                            <p  ref={text}  className={`font-faktum text-2xl sm:text-3xl text-[#1f073b]' ${p ? "animate-fade-up" : "opacity-0"}`}>Dashboard</p>
-                            <p ref={text2} className={`font-faktum text-2xl sm:text-3xl text-[#1f073b]' ${p2 ? "animate-fade-up" : "opacity-0"}`}>em tempo real.</p>
-                            <Image ref={imageRef} className={`${isImageInView ? "animate-fade-up": "opacity-0"}`} src="/dashboard.png" alt="dashboard" width={200} height={200}/>
+                            <p  ref={text}  className={`font-faktum text-2xl sm:text-3xl text-[#1f073b]' ${p ? "animate-fade-in" : "opacity-0"}`}>Dashboard</p>
+                            <p ref={text2} className={`font-faktum text-2xl sm:text-3xl text-[#1f073b]' ${p2 ? "animate-fade-in" : "opacity-0"}`}>em tempo real.</p>
+                            <Image ref={imageRef} className={`${isImageInView ? "animate-fade-in": "opacity-0"}`} src="/dashboard.png" alt="dashboard" width={200} height={200}/>
                         </div>
                         <div className="bg-white rounded-xl border-2 p-4 flex flex-col items-center">
-                            <Image ref={imageReftwo} className={`${isImageInViewtwo ? "animate-fade-up": "opacity-0"}`} src="years.svg" width={200} height={200} alt="icon"/>
-                            <p ref={text3} className={`font-faktum font-bold text-[#1f073b] ${p3 ? "aniamte-fade-up":"opacity-0"}`}>Importe suas</p>
-                            <p ref={text4} className={`font-faktum font-bold text-[#1f073b] ${p4 ? "aniamte-fade-up":"opacity-0"}`}>vendas antigas.</p>
-                            <Image ref={imageRefthree} className={`${isImageInViewthree ? "animate-fade-up": "opacity-0"}`} src="spedy86.svg" width={200} height={200} alt="icon"/>
+                            <Image ref={imageReftwo} className={`${isImageInViewtwo ? "animate-fade-in": "opacity-0"}`} src="years.svg" width={200} height={200} alt="icon"/>
+                            <p ref={text3} className={`font-faktum font-bold text-[#1f073b] ${p3 ? "aniamte-fade-in":"opacity-0"}`}>Importe suas</p>
+                            <p ref={text4} className={`font-faktum font-bold text-[#1f073b] ${p4 ? "aniamte-fade-in":"opacity-0"}`}>vendas antigas.</p>
+                            <Image ref={imageRefthree} className={`${isImageInViewthree ? "animate-fade-in": "opacity-0"}`} src="spedy86.svg" width={200} height={200} alt="icon"/>
                         </div>
                     </div>
 
                     <div className='text-left space-y-4'>
                         <div className="bg-white rounded-xl border-2 p-4 flex flex-col items-center">
-                            <p ref={text5}className={`font-faktum text-xl sm:text-2xl text-[#1f073b] ${p5 ? "animate-fade-up":"opacity-0"}`}>Fechamento</p>
-                            <p ref={text6}className={`font-faktum text-xl sm:text-2xl text-[#1f073b] ${p6 ? "animate-fade-up":"opacity-0"}`}>mensal em dia.</p>
+                            <p ref={text5}className={`font-faktum text-xl sm:text-2xl text-[#1f073b] ${p5 ? "animate-fade-in":"opacity-0"}`}>Fechamento</p>
+                            <p ref={text6}className={`font-faktum text-xl sm:text-2xl text-[#1f073b] ${p6 ? "animate-fade-in":"opacity-0"}`}>mensal em dia.</p>
                             
-                            <Image src="fechamento_mensal.svg" ref={imageReffour} className={`${isImageInViewfour ? "animate-fade-up": "opacity-0"}`}  width={250} height={250} alt="icon"/>
+                            <Image src="fechamento_mensal.svg" ref={imageReffour} className={`${isImageInViewfour ? "animate-fade-in": "opacity-0"}`}  width={250} height={250} alt="icon"/>
                             
                             
-                            <p ref={text7} className={`font-faktum text-lg sm:text-xl text-[#1f073b]${p7 ?"animate-fade-up":"opacity-0"}`}>Sem precisar enviar</p>
-                            <p ref={text8} className={`font-faktum text-lg sm:text-xl text-[#1f073b]${p8 ?"animate-fade-up":"opacity-0"}`}>o XML ao contador.</p>
+                            <p ref={text7} className={`font-faktum text-lg sm:text-xl text-[#1f073b]${p7 ?"animate-fade-in":"opacity-0"}`}>Sem precisar enviar</p>
+                            <p ref={text8} className={`font-faktum text-lg sm:text-xl text-[#1f073b]${p8 ?"animate-fade-in":"opacity-0"}`}>o XML ao contador.</p>
                         </div>
                         <div className="bg-white rounded-xl border-2 p-4 flex flex-col items-center">
-                            <Image ref={imageReffive} className={`${isImageInViewfive ? "animate-fade-up": "opacity-0"}`} src="suporte_operacao_dp.svg" alt="operação" width={100} height={100}/>
-                            <p ref={text10} className={`font-faktum text-lg sm:text-xl text-[#1f073b] mt-4 ${p10 ?"animate-fade-up":"opacity-0"}`}>Suporte total para</p>
-                            <p ref={text11} className={`font-faktum text-lg sm:text-xl text-[#1f073b]  ${p11 ?"animate-fade-up":"opacity-0"}`}>sua operação de</p>
-                            <p ref={text12}className={`font-faktum text-[#d93d8d] text-3xl sm:text-4xl ${p12 ? "animate-fade-up":"opacity-0"}`}>Dropshipping</p>
+                            <Image ref={imageReffive} className={`${isImageInViewfive ? "animate-fade-in": "opacity-0"}`} src="suporte_operacao_dp.svg" alt="operação" width={100} height={100}/>
+                            <p ref={text10} className={`font-faktum text-lg sm:text-xl text-[#1f073b] mt-4 ${p10 ?"animate-fade-in":"opacity-0"}`}>Suporte total para</p>
+                            <p ref={text11} className={`font-faktum text-lg sm:text-xl text-[#1f073b]  ${p11 ?"animate-fade-in":"opacity-0"}`}>sua operação de</p>
+                            <p ref={text12}className={`font-faktum text-[#d93d8d] text-3xl sm:text-4xl ${p12 ? "animate-fade-in":"opacity-0"}`}>Dropshipping</p>
                         </div>
                         
-                        <div className="bg-white rounded-xl border-2 p-4 flex flex-row items-center">
-                        <Image src={'checks.svg'} alt="checks icons" width={50} height={50}/>
-                            <div className="flex flex-col  gap-6">
-                            <p ref={text13}className={`font-faktum text-xl sm:text-xl text-[#d93d8d] flex items-center ${p13 ? "animate-fade-up":"opacity-0"}`}>Cancelamento ou devolução automático:</p>
+                        <div className="bg-white rounded-xl border-2 p-4 flex px-6 flex-row items-center">
+                        <Image src={'checks.svg'} alt="checks icons" className="ml-4" width={40} height={35}/>
+                            <div className="flex flex-col ">
                             
-                            <p  ref={text14} className={`font-faktum text-xl sm:text-xl text-[#1f073b] flex items-center${p14 ? "animate-fade-up":"opacity-0"}`}>Quando uma venda é reembolsada o Ameii Cancela!</p>
-                           
+                            <p ref={text13}className={`font-faktum text-2xl sm:text-2xl text-[#d93d8d] flex items-center ${p13 ? "animate-fade-in":"opacity-0"}`}>Cancelamento ou devolução automática:</p>
+                            
+                            <p  ref={text14} className={`font-faktum text-2xl sm:text-2xl text-[#1f073b] flex items-center${p14 ? "animate-fade-in":"opacity-0"}`}>Quando uma venda é reembolsada a Ameii Cancela!</p>
+                            
                             </div>
                            
                         </div>
@@ -235,12 +236,12 @@ export default function Performance(){
                     <div className='text-left space-y-4'>
                         
                         <div className="bg-white rounded-xl border-2 p-4 flex flex-col items-center relative">
-                            <p ref={text17} className={`font-faktum text-2xl sm:text-3xl text-[#1f073b]${p17 ? "animate-fade-up":"opacity-0"}`}>Divisão entre </p>
-                            <p ref={text18} className={`font-faktum text-2xl sm:text-3xl text-[#1f073b]${p18 ? "animate-fade-up":"opacity-0"}`}>coprodutores.</p>
+                            <p ref={text17} className={`font-faktum text-2xl sm:text-3xl text-[#1f073b]${p17 ? "animate-fade-in":"opacity-0"}`}>Divisão entre </p>
+                            <p ref={text18} className={`font-faktum text-2xl sm:text-3xl text-[#1f073b]${p18 ? "animate-fade-in":"opacity-0"}`}>coprodutores.</p>
                             
                             <div className="relative w-[300px] h-[200px] my-4">
                                 {/* SVG da divisão */}
-                                <Image ref={imageRefsix} className={`${isImageInViewsix ? "animate-fade-up mx-auto": "opacity-0"}`} src="divisao.svg" alt="icon" width={100} height={100} />
+                                <Image ref={imageRefsix} className={`${isImageInViewsix ? "animate-fade-in mx-auto": "opacity-0"}`} src="divisao.svg" alt="icon" width={100} height={100} />
                                 
                                 {/* Foto do coprodutor 1 - esquerda */}
                                 <div className="absolute left-20 bottom-0">
@@ -266,8 +267,8 @@ export default function Performance(){
                             
                         </div>
                         <div className="bg-white rounded-xl border-2 p-4 flex flex-col items-center">
-                            <Image src="split.svg" ref={imageRefseven} className={`${isImageInViewseven ? "animate-fade-up": "opacity-0"}`} alt="icon" width={100} height={100}/>
-                            <p ref={text19} className={`font-faktum text-2xl sm:text-3xl text-[#1f073b] ${p19 ? "animate-fade-up":"opacity-19"}`}>Split fiscal de suas notas.</p>
+                            <Image src="split.svg" ref={imageRefseven} className={`${isImageInViewseven ? "animate-fade-in": "opacity-0"}`} alt="icon" width={100} height={100}/>
+                            <p ref={text19} className={`font-faktum text-2xl sm:text-3xl text-[#1f073b] ${p19 ? "animate-fade-in":"opacity-19"}`}>Split fiscal de suas notas.</p>
                         </div>
 
                         

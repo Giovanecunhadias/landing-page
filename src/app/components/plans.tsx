@@ -8,7 +8,7 @@ export default function Plans() {
         <div className='text-center rounded-full w-full max-w-xs px-4 py-2' style={{backgroundColor:'rgba(217, 61, 141, 0.5)'}}>
           <span className='font-faktum text-[#d93d8d] text-sm md:text-base'>PLANOS & PREÇOS</span>
         </div>
-        <p className='text-[#1f073b] font-faktum text-2xl md:text-4xl text-center mt-4'>Junte-se a Spedy e faça o seu negócio decolar!</p>
+        <p className='text-[#1f073b] font-faktum text-2xl md:text-4xl text-center mt-4'>Junte-se a Ameii e faça o seu negócio decolar!</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -124,7 +124,7 @@ interface PlanCardProps {
 
 function PlanCard({ title, originalPrice, price, notes, additionalNotePrice, features, isMostSold = false, isEnterprise = false }: PlanCardProps) {
   return (
-    <div className={`rounded-xl p-6 flex flex-col h-full ${isEnterprise ? 'border-2 border-[#0f0d0f] relative' : ''}${isMostSold ? 'border-2 border-[#d93d8d] relative' : ''}`}>
+    <div className={`rounded-xl p-6 flex flex-col h-full ${isEnterprise ? 'border-2 border-[#0f0d0f] relative' : ''}${isMostSold ? 'border-2 border-[#d93d8d] relative' : ''} hover:-translate-y-1 hover:scale-100 duration-300`}>
       {isMostSold && (
         <div className="bg-[#1f073b] text-white rounded-full text-center w-28 text-xs font-faktum mx-auto absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-1/2 py-1">
           MAIS VENDIDO
