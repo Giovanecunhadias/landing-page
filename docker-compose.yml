@@ -12,7 +12,7 @@ services:
       - traefik.http.routers.ameii-lp-main.middlewares=cors-ameii-lp-main@docker
       - traefik.http.routers.ameii-lp-main.tls.certresolver=letsencrypt
       - traefik.http.routers.ameii-lp-main.service=ameii-lp-main
-      - traefik.http.services.ameii-lp-main.loadbalancer.server.port=4173
+      - traefik.http.services.ameii-lp-main.loadbalancer.server.port=3000
       - traefik.http.middlewares.cors-ameii-lp-main.headers.customResponseHeaders.access-control-allow-origin=*
       - traefik.http.middlewares.cors-ameii-lp-main.headers.customResponseHeaders.access-control-allow-credentials=true
 
