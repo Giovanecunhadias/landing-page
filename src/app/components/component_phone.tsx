@@ -1,7 +1,7 @@
-import React from 'react';
-import phone from '../assets/image/phone.png';
-import { Mail } from 'lucide-react';
-import Image from 'next/image';
+import React from "react";
+import phone from "../assets/image/phone.png";
+import { Mail } from "lucide-react";
+import Image from "next/image";
 
 const Mockup = () => {
   return (
@@ -9,7 +9,7 @@ const Mockup = () => {
       {/* Imagem do telefone como contêiner principal */}
       <div className="relative">
         <div>
-        <div className="absolute -right-[12.1875rem] top-2/4 -translate-y-2/4">
+          <div className="absolute -right-[12.1875rem] top-2/4 -translate-y-2/4">
             <svg
               width="199"
               height="178"
@@ -62,13 +62,9 @@ const Mockup = () => {
             </div>
           </div>
           <div className="bg-red-500 w-[200px] h-[200px] relative ">
-            <Image 
-              src={phone} 
-              alt="phone" 
-              className="absolute w-full h-full" 
-            />
+            <Image src={phone} alt="phone" className="absolute w-full h-full" />
           </div>
-          
+
           <div className="absolute -left-[12.0625rem] top-2/4 -translate-y-2/4">
             <svg
               width="201"
@@ -123,8 +119,7 @@ const Mockup = () => {
           </div>
         </div>
         {/* Imagem do telefone */}
-        
-        
+
         {/* Notificações e SVGs */}
         <div className="absolute inset-0 flex flex-col items-center justify-center space-y-6">
           {/* Notificação 1 */}
@@ -134,10 +129,14 @@ const Mockup = () => {
             </div>
             <div className="ml-4">
               <div className="flex justify-between items-center">
-                <p className="text-sm font-semibold text-gray-900">Olá Ricardo</p>
+                <p className="text-sm font-semibold text-gray-900">
+                  Olá Ricardo
+                </p>
                 <p className="text-xs text-gray-500">1m atrás</p>
               </div>
-              <p className="text-sm text-gray-800 mt-1">Sua nota fiscal está pronta!</p>
+              <p className="text-sm text-gray-800 mt-1">
+                Sua nota está pronta!
+              </p>
             </div>
           </div>
 
@@ -149,78 +148,77 @@ const Mockup = () => {
               </div>
               <div className="ml-4">
                 <div className="flex justify-between items-center">
-                  <p className="text-sm font-semibold text-gray-900">Olá Juliana</p>
+                  <p className="text-sm font-semibold text-gray-900">
+                    Olá Juliana
+                  </p>
                   <p className="text-xs text-gray-500">2m atrás</p>
                 </div>
-                <p className="text-sm text-gray-800 mt-1">Sua nota fiscal está pronta!</p>
+                <p className="text-sm text-gray-800 mt-1">
+                  Sua nota está pronta!
+                </p>
               </div>
             </div>
 
             {/* SVGs conectados */}
             <div className=" ">
-      <div className="flex flex-col items-start">
-        {/* SVG 1 */}
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-12 h-auto  fill-transparent"
-            viewBox="0 0 199 92"
-            
+              <div className="flex flex-col items-start">
+                {/* SVG 1 */}
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-12 h-auto  fill-transparent"
+                    viewBox="0 0 199 92"
+                  >
+                    <path
+                      d="M 197.5 2 L 161.5 2 C 154.873 2 149.5 7.373 149.5 14 L 149.5 78 C 149.5 84.627 144.127 90 137.5 90 L 2 90"
+                      stroke="rgb(149, 191, 71)"
+                      strokeWidth={2}
+                      strokeDasharray="300"
+                      className="animate-draw"
+                    ></path>
+                  </svg>
+                </div>
 
-          >
-            <path                
-              d="M 197.5 2 L 161.5 2 C 154.873 2 149.5 7.373 149.5 14 L 149.5 78 C 149.5 84.627 144.127 90 137.5 90 L 2 90"
-              stroke="rgb(149, 191, 71)"
-              strokeWidth={2}
-              strokeDasharray="300"
-              className='animate-draw'
-            ></path>
-          </svg>
-        </div>
+                {/* SVG 2 */}
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-12 h-auto"
+                    viewBox="0 0 204 3"
+                    strokeDasharray={300}
+                  >
+                    <path
+                      d="M 202.501 1 L 1.53 1"
+                      stroke="rgb(40, 47, 227)"
+                      strokeWidth="2"
+                      strokeDasharray="300"
+                      fill="transparent"
+                      className="animate-draw"
+                    ></path>
+                  </svg>
+                </div>
 
-        {/* SVG 2 */}
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-12 h-auto"
-            viewBox="0 0 204 3"
-            strokeDasharray={300}
-          >
-            <path
-              d="M 202.501 1 L 1.53 1"
-              stroke="rgb(40, 47, 227)"
-              strokeWidth="2"
-              strokeDasharray="300"
-              fill="transparent"
-              className='animate-draw'
-              
-              
-            ></path>
-          </svg>
-        </div>
-
-        {/* SVG 3 */}
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-12 h-auto"
-            viewBox="0 0 199 92"
-          >
-            <path
-              d="M 197.5 90 L 161.5 90 C 154.873 90 149.5 84.627 149.5 78 L 149.5 14 C 149.5 7.373 144.127 2 137.5 2 L 2 2"
-              stroke="rgb(217, 61, 141)"
-              strokeWidth="2.01"
-              strokeDasharray="300"
-              fill="transparent"
-              className='animate-draw'
-            ></path>
-          </svg>
-        </div>
-      </div>
+                {/* SVG 3 */}
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-12 h-auto"
+                    viewBox="0 0 199 92"
+                  >
+                    <path
+                      d="M 197.5 90 L 161.5 90 C 154.873 90 149.5 84.627 149.5 78 L 149.5 14 C 149.5 7.373 144.127 2 137.5 2 L 2 2"
+                      stroke="rgb(217, 61, 141)"
+                      strokeWidth="2.01"
+                      strokeDasharray="300"
+                      fill="transparent"
+                      className="animate-draw"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
       </div>
     </div>
   );

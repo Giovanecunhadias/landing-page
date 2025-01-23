@@ -22,7 +22,7 @@ export default function Rodape() {
             />
             <p className="text-gray-500 justify-center mb-6 text-sm leading-relaxed">
               Minimizamos o trabalho operacional do seu negócio, conectando na
-              sua plataforma de pagamento e emitindo as notas fiscais
+              sua plataforma de pagamento e emitindo as vendas fiscais
               automaticamente.
             </p>
             <div className="flex gap-4">
