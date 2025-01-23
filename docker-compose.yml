@@ -1,0 +1,21 @@
+services:
+  web:
+    build: .
+    ports:
+      - "4173:4173"
+    networks:
+      - traefik_default
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.ameii-lp-main.rule=Host(`ameii.com.br`)
+      - traefik.http.routers.ameii-lp-main.entrypoints=websecure
+      - traefik.http.routers.ameii-lp-main.middlewares=cors-ameii-lp-main@docker
+      - traefik.http.routers.ameii-lp-main.tls.certresolver=letsencrypt
+      - traefik.http.routers.ameii-lp-main.service=ameii-lp-main
+      - traefik.http.services.ameii-lp-main.loadbalancer.server.port=4173
+      - traefik.http.middlewares.cors-ameii-lp-main.headers.customResponseHeaders.access-control-allow-origin=*
+      - traefik.http.middlewares.cors-ameii-lp-main.headers.customResponseHeaders.access-control-allow-credentials=true
+
+networks:
+  traefik_default:
+    external: true
