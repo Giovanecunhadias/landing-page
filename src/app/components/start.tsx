@@ -59,25 +59,25 @@ export default function Start() {
             <div style={{backgroundColor: '#1F073B'}} className="pt-8   pt-22
             ">
                 <div className="flex flex-col items-center text-center">
-                    <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-faktum animate-delay-0 animate-duration-10000 animate-fade-down">
+                    <h1 className="text-white text-2xl  sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-faktum animate-delay-0 animate-duration-10000 animate-fade-down">
                         Foque <span className="text-[#d93d8d]">em vender</span> e deixe as <br className="hidden sm:inline" />
                         Vendas com <span className="text-[#d93d8d]">a Ameii.</span>
                     </h1>
                     
-                    <p className="flex items-center text-white font-arial mt-4 gap-2  text-sm sm:text-base lg:text-lg">
+                    <p className="flex items-center text-white font-arial mt-4 gap-2  text-sm sm:text-base lg:text-2xl">
                         Integre <MoveRight color={arrowColor} className="mx-1 w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" /> Venda <MoveRight color={arrowColor} className="mx-1 w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" /> 
                         <span className="text-[#d93d8d] font-faktum">O resto é com o Ameii</span>
                     </p>
                 </div>
                 
-                <div ref={headerRef} className="flex h-screen flex-col w-full  overflow-hidden  relative">
+                <div ref={headerRef} className="flex h-[90vh] justify-end flex-col w-full  overflow-hidden  relative">
                     <HeaderPhone/>
                     <div className='min-h-[4px]  absolute bottom-0 w-screen bg-[linear-gradient(90deg,_rgb(95,_194,_238)_0%,_rgb(217,_61,_141)_100%)]' ></div>
                 </div>
             </div>
-
-            <Features/>
             <InfinityList/>
+            <Features/>
+            
             {/* INTEGRAÇÕES */}
             <Integrations/>
             <Performance/>

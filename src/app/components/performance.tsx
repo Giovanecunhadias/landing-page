@@ -212,7 +212,7 @@ export default function Performance() {
             <Image
               ref={imageRef}
               className={`${isImageInView ? "animate-fade-in" : "opacity-0"}`}
-              src="/dashboard.png"
+              src="/performance1.png"
               alt="dashboard"
               width={200}
               height={200}
@@ -250,7 +250,7 @@ export default function Performance() {
               className={`${
                 isImageInViewthree ? "animate-fade-in" : "opacity-0"
               }`}
-              src="spedy86.svg"
+              src="/performance3.png"
               width={200}
               height={200}
               alt="icon"
@@ -397,7 +397,7 @@ export default function Performance() {
                 className={`${
                   isImageInViewsix ? "animate-fade-in mx-auto" : "opacity-0"
                 }`}
-                src="divisao.svg"
+                src="/performance2.png"
                 alt="icon"
                 width={100}
                 height={100}

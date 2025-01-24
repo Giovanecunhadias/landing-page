@@ -8,8 +8,8 @@ export function HeaderPhoneNotificationOne() {
   const { windowWidth } = useWindowWidth();
 
   return (
-    <div className="lg:w-[25%] w-5/6 gap-3 inline-flex items-center bg-[#F1E1EF] py-2 pl-2 pr-4 rounded-[0.75rem] relative">
-      <div className="min-w-[3.25rem] min-h-[3.25rem]">
+    <div className="lg:w-[25%] sm:w-2/6 w-5/6  md:w-2/6  gap-3 inline-flex items-center bg-[#F1E1EF] py-2 pl-2 pr-4 rounded-[0.75rem] relative">
+      <div className="min-w-[3.25rem] flex justify-center items-center min-h-[3.25rem]">
         <Image
           src={"/favicon.ico"}
           alt="Ícone de envelope"
@@ -42,7 +42,7 @@ export function HeaderPhoneNotificationOne() {
                 {
                   "bg-[#fff]": item.id === 1,
                   "bg-[#01b169]": item.id === 2,
-                  "bg-[#ffbc00]": item.id === 3,
+                  "bg-[#FFF]": item.id === 3,
                 }
               )}
             >
@@ -123,12 +123,12 @@ const items = [
   },
   {
     id: 2,
-    icon: "/icons/kiwify.svg",
-    alt: "Ícone de kiwify",
+    icon: "/icons/asaas.svg",
+    alt: "Ícone de asaas",
   },
   {
     id: 3,
-    icon: "/icons/eduzz.svg",
-    alt: "Ícone de eduzz",
+    icon: "/icons/stripe.svg",
+    alt: "Ícone de stripe",
   },
 ];

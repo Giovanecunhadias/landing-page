@@ -1,10 +1,10 @@
 import Image from 'next/image';
+
 import eduzz from '../assets/image/eduzz.png';
-import hotmart from '../assets/image/hotmart.png';
 import asaas from '../assets/image/ASAAS.png';
 import shopify from '../assets/image/shopify.png';
-import greenn from '../assets/image/green.webp';
-import braip from '../assets/image/braip.png';
+import paguesafe from '../assets/image/paguesafe.jpeg';
+import azcend from '../assets/image/azcend.jpeg';
 import utmify from '../assets/image/utmify.png'
 import woocommerce from '../assets/image/woocommerce.webp'
 export default function LinesFoots() {
@@ -71,28 +71,28 @@ export default function LinesFoots() {
           
           {/* Adicionar Logos Rosa */}
           <div
-            className="absolute bg-white rounded-xl p-6"
-            style={{ top: '-25%', right: '67%' }} // Responsivo com %
+            className="absolute bg-white rounded-xl px-6 py-3"
+            style={{ top: '-25%', right: '65%' }} // Responsivo com %
           >
-            <Image src={eduzz} alt="Eduzz" color="" width={100} height={100} />
+            <Image src="/icons/stripe.svg" alt="Stripe" color="" width={100} height={100} />
           </div>
           <div
-            className="absolute bg-white rounded-xl p-4"
+            className="absolute bg-white rounded-xl  px-6 py-5"
             style={{ top: '-25%', right: '27%' }} // Responsivo com %
           >
-            <Image src={hotmart} alt="Hotmart" width={100} height={100} />
+            <Image src={eduzz} alt="eduzz" width={100} height={100} />
           </div>
           <div
-          className='absolute bg-white rounded-xl p-4'
-          style={{right: '67%'}}
+          className='absolute bg-white rounded-xl px-6 py-7'
+          style={{right: '65%',}}
           >
-            <Image src={greenn} alt='green' width={100} height={100}/>
+            <Image src={paguesafe} alt='paguesafe' width={100} height={100}/>
           </div>
           <div
-          className='absolute bg-white rounded-xl p-4'
+          className='absolute bg-black rounded-xl px-6 py-7'
           style={{ right: '25%'}}
           >
-            <Image src={braip} alt='green'  width={90} height={30}/>
+            <Image src={azcend} alt='AZCEND'  width={100} height={100}/>
           </div>
         </div>
       </div>
@@ -102,16 +102,16 @@ export default function LinesFoots() {
         <Image src={asaas} alt='asaas'/>
       </div> 
       <div className='bg-white rounded-xl p-4'>
-        <Image src={hotmart} alt='asaas' width={150} height={100}/>
+        <Image src={eduzz} alt='eduzz' width={150} height={100}/>
+      </div>
+      <div className='bg-white rounded-xl py-6 px-2'>
+        <Image src={paguesafe}  alt='paguesafe'/>
       </div>
       <div className='bg-white rounded-xl p-4'>
-        <Image src={greenn}  alt='green'/>
+        <Image src={shopify} alt='shopify'/>
       </div>
-      <div className='bg-white rounded-xl p-4'>
-        <Image src={shopify} alt='green'/>
-      </div>
-      <div className='bg-white rounded-xl p-4'>
-        <Image src={eduzz} alt='green'/>
+      <div className='bg-white rounded-xl pl-6 py-4'>
+        <Image src='/icons/stripe.svg' width={100} height={100} alt='stripe'/>
       </div>
     </div>
     </>
