@@ -15,7 +15,9 @@ import InfiniteScroll from './scrollhorizontalanimation'
 import { HeaderPhone } from './HeaderPhone'
 import Performance from './performance'
 import { useEffect, useRef, useState } from 'react'
-
+import YeverComponentFinal from '@/components/ui/YeverComponent'
+import YeverComponent from '@/components/ui/yever'
+import Yevertwo from '@/components/ui/yevertwo'
 
 export default function Start() {
     const arrowColor = '#D93D8D'
@@ -86,6 +88,12 @@ export default function Start() {
             {/* GARANTIA */}
             <Garantia/>              
             <Plans/>
+            <div className="flex flex-col items-center p-4 md:p-8 lg:p-16 bg-[#f8f9fa]">
+                        <div className="flex flex-col items-center w-full gap-6 md:gap-6 lg:gap-6">
+                            <YeverComponent/>
+                            <Yevertwo/>
+                        </div>
+            </div>
             <Faq/>
             {/*COMECE AGORA*/}
             <Proposal/>

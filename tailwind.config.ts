@@ -148,7 +148,11 @@ export default {
   		fontFamily: {
   			faktum: [
   				'Faktum'
-  			]
+  			],
+			lora:[
+				'Lora',
+				'serif'
+			]
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
