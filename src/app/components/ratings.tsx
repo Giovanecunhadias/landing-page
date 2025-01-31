@@ -16,7 +16,7 @@ export default function Ratings() {
           </span>
         </div>
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-faktum mt-2 mb-12">
-          + de 6 milhões de vendas emitidas
+          + de 6 milhões de vendas realizadas
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 py-4 lg:py-24 gap-6 w-full lg:max-w-7xl relative ">
