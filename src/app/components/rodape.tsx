@@ -32,12 +32,12 @@ export default function Rodape() {
               >
                 <Instagram size={24} />
               </Link>
-              <Link
+              {/* <Link
                 href="https://facebook.com"
                 className="text-blue-600 hover:text-blue-700"
               >
                 <Facebook size={24} />
-              </Link>
+              </Link> */}
               <Link
                 href="https://youtube.com"
                 className="text-red-600 hover:text-red-700"

@@ -20,15 +20,17 @@ export default function Plans() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <PlanCard
-          title="Essencial"
-          originalPrice="948,00"
-          price="711"
-          notes="1.800"
-          additionalNotePrice="0,58"
+          title="Topo de Funil"
+          // originalPrice="948,00"
+          price="Grátis"
+          moth={true}
+          notes="1.5%"
+          downLabel="Ideal para quem está começando"
+          // additionalNotePrice="0,58"
           features={[
             { text: "Taxa de adesão grátis", available: true },
             { text: "+ de 30 Integrações", available: true },
-            { text: "Split de vendas fiscais", available: false },
+            { text: "Teste A/B", available: false },
             { text: "Suporte à Dropshipping", available: true },
             { text: "Fechamento mensal", available: true },
             {
@@ -46,16 +48,16 @@ export default function Plans() {
               text: "Atendimento prioritário com especialista",
               available: false,
             },
-            { text: "Apoio técnico para integração", available: false },
           ]}
         />
 
         <PlanCard
-          title="Avançado"
-          originalPrice="2.028,00"
-          price="1.521"
-          notes="7.200"
-          additionalNotePrice="0,38"
+          title="Escala Fofo"
+          originalPrice="147"
+          price="99.99"
+          notes="1.0%"
+          downLabel="Ideal para quem fatura mais de R$30k por mês"
+          // additionalNotePrice="0,38"
           features={[
             { text: "Taxa de adesão grátis", available: true },
             { text: "+ de 30 Integrações", available: true },
@@ -77,17 +79,18 @@ export default function Plans() {
               text: "Atendimento prioritário com especialista",
               available: false,
             },
-            { text: "Apoio técnico para integração", available: false },
+           
           ]}
           isMostSold={true}
         />
 
         <PlanCard
-          title="Pro"
-          originalPrice="2.748,00"
-          price="2.061"
-          notes="24.000"
-          additionalNotePrice="0,58"
+          title="Duplicando as campanhas"
+          originalPrice="497"
+          price="397.99"
+          notes="0.75%"
+          // additionalNotePrice="0,58"
+          downLabel="Ideal para quem fatura mais de R$60k por mês"
           features={[
             { text: "Taxa de adesão grátis", available: true },
             { text: "+ de 30 Integrações", available: true },
@@ -109,15 +112,16 @@ export default function Plans() {
               text: "Atendimento prioritário com especialista",
               available: false,
             },
-            { text: "Apoio técnico para integração", available: false },
+           
           ]}
         />
 
         <PlanCard
-          title="Enterprise"
+          title="Bota a casa"
           price="Sob Consulta"
-          notes="+ de 24k vendas /ano"
-          additionalNotePrice="Planos sob medida"
+          downLabel="Ideal para quem fatura mais de R$120k por mês"
+          notes="0.5%"
+          // additionalNotePrice="Planos sob medida"
           features={[
             { text: "Taxa de adesão grátis", available: true },
             { text: "+ de 30 Integrações", available: true },
@@ -159,10 +163,12 @@ interface PlanCardProps {
   originalPrice?: string;
   price: string;
   notes: string;
-  additionalNotePrice: string;
+  additionalNotePrice?: string;
   features: PlanFeature[];
+  moth?: boolean;
   isMostSold?: boolean;
   isEnterprise?: boolean;
+  downLabel?: string;
 }
 
 function PlanCard({
@@ -172,6 +178,8 @@ function PlanCard({
   notes,
   additionalNotePrice,
   features,
+  moth,
+  downLabel,
   isMostSold = false,
   isEnterprise = false,
 }: PlanCardProps) {
@@ -238,8 +246,9 @@ function PlanCard({
           isEnterprise ? "" : "text-2xl md:text-3xl"
         } mb-2`}
       >
-        {isEnterprise ? price : `R$ ${price}`}
-        {!isEnterprise && <span className="text-sm"> /ano</span>}
+        {!moth? isEnterprise ? price : `R$ ${price}` : isEnterprise ? price : `${price}`}
+        {}
+        {!isEnterprise && <span className="text-sm"> {moth? "" : "/mês"}</span>}
       </p>
       <p
         className={`${
@@ -283,8 +292,7 @@ function PlanCard({
           {!isEnterprise && <MoveRight strokeWidth={1} />}
         </button>
         <p className="text-[#1f073b] flex items-center justify-center text-sm mt-2">
-          <Undo2 size={16} strokeWidth={1} className="mr-1" /> 30 dias para
-          pedir reembolso
+          <Undo2 size={16} strokeWidth={1} className="mr-1" /> {downLabel}
         </p>
       </div>
     </div>

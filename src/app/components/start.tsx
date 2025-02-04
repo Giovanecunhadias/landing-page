@@ -15,7 +15,6 @@ import InfiniteScroll from './scrollhorizontalanimation'
 import { HeaderPhone } from './HeaderPhone'
 import Performance from './performance'
 import { useEffect, useRef, useState } from 'react'
-import YeverComponentFinal from '@/components/ui/YeverComponent'
 import YeverComponent from '@/components/ui/yever'
 import Yevertwo from '@/components/ui/yevertwo'
 

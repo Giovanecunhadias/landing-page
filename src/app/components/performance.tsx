@@ -294,7 +294,7 @@ export default function Performance() {
                 p7 ? "animate-fade-in" : "opacity-0"
               }`}
             >
-              Sem precisar enviar
+              Sem precisar Solicitar
             </p>
             <p
               ref={text8}
@@ -302,7 +302,7 @@ export default function Performance() {
                 p8 ? "animate-fade-in" : "opacity-0"
               }`}
             >
-              o XML ao contador.
+              Relatiorio Automatico
             </p>
           </div>
           <div className="bg-white rounded-xl border-2 p-4 flex flex-col items-center">

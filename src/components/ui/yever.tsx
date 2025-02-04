@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function YeverComponent() {
+export default function AmeiiComponent() {
   return (
     <div className="w-full px-4 md:px-6 py-8 md:py-12">
       {/* Texto Principal */}
@@ -17,8 +17,8 @@ export default function YeverComponent() {
           </div>
           <div className="md:w-1/3 text-gray-600">
             <p className="text-sm md:text-base">
-              Apresentamos um conjunto completo de recursos, junto com ferramentas exclusivas
-              desenvolvidas para impulsionar suas vendas!
+              Apresentamos um conjunto completo de recursos, junto com
+              ferramentas exclusivas desenvolvidas para impulsionar suas vendas!
             </p>
           </div>
         </div>
@@ -38,9 +38,10 @@ export default function YeverComponent() {
               Acelere as compras com o checkout 3.1
             </p>
             <p className="text-sm md:text-base text-gray-600 w-full mt-2">
-              O Checkout 3.1 da Yever representa uma evolução significativa na otimização da
-              experiência do cliente durante o processo de compra. Com uma abordagem centrada no
-              cliente, design intuitivo e personalização flexível.
+              O Checkout 3.1 da Ameii representa uma evolução significativa na
+              otimização da experiência do cliente durante o processo de compra.
+              Com uma abordagem centrada no cliente, design intuitivo e
+              personalização flexível.
             </p>
           </div>
 
@@ -53,16 +54,16 @@ export default function YeverComponent() {
                   Crie infinitos checkouts customizáveis
                 </p>
                 <p className="text-sm md:text-base text-gray-600 mt-2">
-                  O Infinity Checkout representa uma nova dimensão de flexibilidade e versatilidade.
-                  Imagine a capacidade de criar múltiplos checkouts personalizados para diferentes
-                  públicos.
+                  O Infinity Checkout representa uma nova dimensão de
+                  flexibilidade e versatilidade. Imagine a capacidade de criar
+                  múltiplos checkouts personalizados para diferentes públicos.
                 </p>
               </div>
               <div className="md:w-1/2 flex justify-center">
-                <Image 
-                  src="/item2-new.png" 
-                  width={300} 
-                  height={300} 
+                <Image
+                  src="/11.png"
+                  width={300}
+                  height={300}
                   alt="checkout customizável"
                   className="w-full h-auto object-contain"
                 />
@@ -76,16 +77,16 @@ export default function YeverComponent() {
                   Crie infinitos checkouts customizáveis
                 </p>
                 <p className="text-sm md:text-base text-gray-600 mt-2">
-                  O Infinity Checkout representa uma nova dimensão de flexibilidade e versatilidade.
-                  Imagine a capacidade de criar múltiplos checkouts personalizados para diferentes
-                  públicos.
+                  O Infinity Checkout representa uma nova dimensão de
+                  flexibilidade e versatilidade. Imagine a capacidade de criar
+                  múltiplos checkouts personalizados para diferentes públicos.
                 </p>
               </div>
               <div className="md:w-1/2 flex justify-center">
-                <Image 
-                  src="/item3-new.png" 
-                  width={300} 
-                  height={300} 
+                <Image
+                  src="/22.png"
+                  width={300}
+                  height={300}
                   alt="checkout customizável"
                   className="w-full h-auto object-contain"
                 />
