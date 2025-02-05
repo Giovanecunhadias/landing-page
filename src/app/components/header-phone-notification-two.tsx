@@ -28,7 +28,7 @@ export function HeaderPhoneNotificationTwo() {
 
       <div
         style={{
-          left: windowWidth > 1000 ? "30.75rem" : `${windowWidth - 510}px`,
+          left: windowWidth > 1000 ? "27.75rem" : `${windowWidth - 510}px`,
         }}
         className="absolute top-2/4 -translate-y-2/4 left-[30.75rem] -z-10"
       >

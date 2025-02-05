@@ -29,7 +29,7 @@ export function HeaderPhoneNotificationOne() {
 
       <div
         style={{
-          right: windowWidth > 1000 ? "30.875rem" : `${windowWidth - 510}px`,
+          right: windowWidth > 1000 ? "27.875rem" : `${windowWidth - 510}px`,
         }}
         className="absolute top-2/4 -translate-y-2/4 -z-10"
       >
