@@ -71,7 +71,7 @@ export default function Start() {
                     </p>
                 </div>
                 
-                <div ref={headerRef} className="flex h-[90vh] justify-end flex-col w-full  overflow-hidden  relative">
+                <div ref={headerRef} className="flex h-[60vh] justify-end flex-col w-full  overflow-hidden  relative">
                     <HeaderPhone/>
                     <div className='min-h-[4px]  absolute bottom-0 w-screen bg-[linear-gradient(90deg,_rgb(95,_194,_238)_0%,_rgb(217,_61,_141)_100%)]' ></div>
                 </div>
@@ -90,7 +90,7 @@ export default function Start() {
             {/* DEPOIMENTOS */}
             <Ratings/>
             {/* GARANTIA */}
-            <Garantia/>              
+            <Garantia/>     
             <Plans/>
  
             <Faq/>

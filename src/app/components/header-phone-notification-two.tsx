@@ -8,7 +8,7 @@ export function HeaderPhoneNotificationTwo() {
   const { windowWidth } = useWindowWidth();
 
   return (
-    <div className="lg:w-[25%] sm:w-2/6 w-5/6  md:w-2/6 gap-3 inline-flex items-center bg-[#F1E1EF] py-2 pl-2 pr-4 rounded-[0.75rem] relative">
+    <div className="lg:w-[21%] sm:w-2/6 w-5/6  md:w-[18%] gap-3 inline-flex items-center bg-[#F1E1EF] py-2 pl-2 pr-4 rounded-[0.75rem] relative">
       <div className="min-w-[3.25rem] flex justify-center items-center min-h-[3.25rem]">
         <Image
           src={"/favicon.ico"}
@@ -93,7 +93,9 @@ export function HeaderPhoneNotificationTwo() {
                 className="line-3"
               />
             </svg>
-
+            <div className="absolute top-[60px] right-1/2 rounded-xl bg-white w-fit h-fit p-2 ">
+              <Image src={"/logo3.png"} className="animate-pulseScale" width={40} height={40} alt="ameii"></Image>
+            </div>
             <div className="absolute inset-0">
               {/* Bolinha 1 */}
               <div

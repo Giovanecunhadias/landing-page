@@ -8,7 +8,7 @@ export function HeaderPhoneNotificationOne() {
   const { windowWidth } = useWindowWidth();
 
   return (
-    <div className="lg:w-[25%] sm:w-2/6 w-5/6  md:w-2/6  gap-3 inline-flex items-center bg-[#F1E1EF] py-2 pl-2 pr-4 rounded-[0.75rem] relative">
+    <div className="lg:w-[21%] sm:w-2/6 w-5/6  md:w-[18%]  gap-3 inline-flex items-center bg-[#F1E1EF] py-2 pl-2 pr-4 rounded-[0.75rem] relative">
       <div className="min-w-[3.25rem] flex justify-center items-center min-h-[3.25rem]">
         <Image
           src={"/favicon.ico"}
@@ -19,10 +19,10 @@ export function HeaderPhoneNotificationOne() {
       </div>
 
       <div className="flex w-full flex-col text-[0.9375rem]">
-        <b className="inline-flex items-center justify-between font-faktumSemiBold text-brand-deep-warm">
+        <b className="inline-flex  items-center justify-between font-faktumSemiBold text-brand-deep-warm">
           Botar a Casa!<span className="opacity-25 text-xs">1m atrás</span>
         </b>
-        <p className="text-foreground opacity-70 font-faktumMedium">
+        <p className="text-foreground opacity-70  md:hidden lg:block font-faktumMedium">
           Escala Fofo, Bota a casa que o ROI veio
         </p>
       </div>
@@ -59,8 +59,8 @@ export function HeaderPhoneNotificationOne() {
 
           <div className="absolute -right-[12.1875rem] top-2/4 -translate-y-2/4">
             <svg
-              width="199"
-              height="178"
+              width="200"
+              height="200"
               viewBox="0 0 199 178"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,10 @@ export function HeaderPhoneNotificationOne() {
               />
             </svg>
 
-            <div className="absolute top-0 left-0">
+            <div className="absolute top-[70px] right-1/4 rounded-xl bg-white w-fit h-fit p-2 ">
+              <Image src={"/logo3.png"} className="animate-pulseScale" width={40} height={40} alt="ameii"></Image>
+            </div>
+            <div className="absolute top-[11px] left-0">
               {/* Bolinha 1 */}
               <div
                 className="w-3 h-3 bg-[#fff] rounded-full absolute animate-bolinha1 opacity-70 shadow-bolinha"
