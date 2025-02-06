@@ -17,7 +17,7 @@ import Performance from './performance'
 import { useEffect, useRef, useState } from 'react'
 import YeverComponent from '@/components/ui/yever'
 import Yevertwo from '@/components/ui/yevertwo'
-
+import { useWindowHeight } from '@/hooks/useHeight'
 export default function Start() {
     const arrowColor = '#D93D8D'
 
@@ -49,7 +49,7 @@ export default function Start() {
             }
         };
     }, []);
-
+    const { windowHeight } = useWindowHeight()
     return (
         <>
             <Nav isInView={isInView} />
@@ -70,8 +70,8 @@ export default function Start() {
                         <span className="text-[#d93d8d] font-faktum">O resto é com o Ameii</span>
                     </p>
                 </div>
-                
-                <div ref={headerRef} className="flex h-[70vh] justify-end flex-col w-full  overflow-hidden  relative">
+                <div className='flex flex-col py-2 '></div>
+                <div ref={headerRef}  className={`flex  justify-end flex-col w-full  overflow-hidden  relative ${windowHeight < 700 ? 'h-[100vh]' : 'h-[70vh]'}`}>
                     <HeaderPhone/>
                     <div className='min-h-[4px]  absolute bottom-0 w-screen bg-[linear-gradient(90deg,_rgb(95,_194,_238)_0%,_rgb(217,_61,_141)_100%)]' ></div>
                 </div>
