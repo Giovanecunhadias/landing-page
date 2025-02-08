@@ -11,25 +11,28 @@ export function HeaderPhone() {
   const { windowHeight } = useWindowHeight()
   return (
     <>
-    
-    <div className="hidden lg:flex mx-auto  justify-center h-[69vh] w-full max-w-[79.9375rem]">
-      <div className="w-full relative  h-full  flex-col">
-        <Image
-            src={'/phone_header.avif'}
-            width={windowWidth}
-            alt="Seta para baixo"
-            height={windowHeight}
-            quality={100}
-            objectFit={windowWidth > 1276 ? 'contain' : 'cover'}
-          />
+    <div className='hidden lg:flex lg:justify-center relative rounded-inherit w-full  h-fit min-h-fit  '>
+      <Image
+      src={'https://framerusercontent.com/images/mFl5E44fiCWgJcpa9EXaSVb6Zw.png'}
+     fill={false}
+     width={windowWidth * 0.9}
+     height={windowHeight * 0.7}
+      quality={100}
+      alt='imagem'
+      />
+       
+   
+      
+      
         
-        <div className={`absolute flex flex-col items-center w-full gap-[0.75rem]   -translate-x-1/4  top-[35%] left-2/4 `}>
+        
+        <div style={{bottom: windowHeight * 0.3}}  className={`hidden lg:flex absolute   flex-col items-center w-full gap-[0.75rem]   -translate-x-1/2   left-2/4 `} >
           <HeaderPhoneNotificationOne />
           <HeaderPhoneNotificationTwo />
         </div>
-      </div>
       
-    </div>
+        </div>
+    
     {/* <div className="lg:hidden flex flex-col items-center justify-center h-screen w-screen relative">
       <div className="absolute h-full w-screen">
         <Image
@@ -47,9 +50,34 @@ export function HeaderPhone() {
         </div>
       </div>
     </div> */}
-    <div className="w-full max-w-[79.9375rem] mx-auto">
-      <div className="relative w-full h-[37.3125rem]">
-        <div className='py-20'>
+   
+  
+   <div className="lg:hidden  w-full h-[70vh] min-h-[70vh] ">
+   <Image
+      src="https://framerusercontent.com/images/mFl5E44fiCWgJcpa9EXaSVb6Zw.png"
+      alt="Imagem"
+     className='absolute bottom-0'
+     
+      objectFit='contain'
+      fill  
+     // Isso ajusta automaticamente o tamanho
+    />
+    </div>
+    
+    
+   
+    
+    </>
+    
+    
+  )
+}
+
+
+{/*
+  <div className="flex w-full py-20 max-h-[300px] items-end  lg:hidden">
+      
+        
         <Image
           src="/phone_header.avif"
           alt="Phone interface"
@@ -59,19 +87,19 @@ export function HeaderPhone() {
             objectFit: windowWidth > 1276  ? "contain" : "cover",
             
           }}
+          sizes='(max-width: 200px) 100vw, (max-width: 1200px) 50vw, 33vw'
+          />
 
-          sizes="(max-width: 1276px) 100vw, 1276px"
-        /></div>
+          
         
-        <div className="absolute w-full max-w-[350px] flex flex-col gap-3 left-[250px] top-[32%] -translate-x-1/2">
+        
+        <div className={`flex absolute  flex-col items-center w-full gap-[0.75rem]   -translate-x-1/2  top-[35%] left-2/4 `}>
           <HeaderPhoneNotificationOne />
           <HeaderPhoneNotificationTwo />
         </div>
       </div>
-    </div>
-    
-    </>
-    
-    
-  )
-}
+  
+  
+  
+  
+  */}

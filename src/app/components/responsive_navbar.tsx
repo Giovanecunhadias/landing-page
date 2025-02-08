@@ -57,7 +57,7 @@ export default function Nav({ isInView }: { isInView: boolean }) {
         </>
     )
     return(
-        <nav  className={` text-white w-full sticky z-20  top-0 ${isInView ? "bg-[#1f073b]" : "bg-white"}`}>
+        <nav  className={` text-white w-full sticky z-20 h-[8vh] top-0 ${isInView ? "bg-[#1f073b]" : "bg-white"}`}>
             <div className="max-w-7x1 mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex flex-row items-center w-full justify-between">

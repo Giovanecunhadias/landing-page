@@ -57,9 +57,9 @@ export default function Start() {
             <InfiniteScroll/>
             <WhatsappButton/>
             
-            <div style={{backgroundColor: '#1F073B'}} className="pt-8   pt-22
+            <div style={{backgroundColor: '#1F073B'}} className="flex flex-col gap-12 
             ">
-                <div className="flex flex-col items-center text-center">
+                <div className="flex flex-col items-center text-center ">
                     <h1 className="text-white text-2xl  sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-faktum animate-delay-0 animate-duration-10000 animate-fade-down">
                         Foque <span className="text-[#d93d8d]">em vender</span> e deixe as <br className="hidden sm:inline" />
                         Vendas com <span className="text-[#d93d8d]">a Ameii.</span>
@@ -70,10 +70,10 @@ export default function Start() {
                         <span className="text-[#d93d8d] font-faktum">O resto é com o Ameii</span>
                     </p>
                 </div>
-                <div className='flex flex-col py-2 '></div>
-                <div ref={headerRef}  className={`flex  justify-end flex-col w-full  overflow-hidden  relative ${windowHeight < 700 ? 'h-[100vh]' : 'h-[70vh]'}`}>
+               
+                <div ref={headerRef}  className={`flex min-h-[70vh] items-end  overflow-x-hidden   `}>
                     <HeaderPhone/>
-                    <div className='min-h-[4px]  absolute bottom-0 w-screen bg-[linear-gradient(90deg,_rgb(95,_194,_238)_0%,_rgb(217,_61,_141)_100%)]' ></div>
+                    <div className='min-h-[4px]  absolute  w-full bg-[linear-gradient(90deg,_rgb(95,_194,_238)_0%,_rgb(217,_61,_141)_100%)]' ></div> 
                 </div>
             </div>
             <InfinityList/>

@@ -89,9 +89,7 @@ export function HeaderPhoneNotificationOne() {
               />
             </svg>
 
-            <div className="absolute top-[70px] right-1/4 rounded-xl bg-white w-fit h-fit p-2 ">
-              <Image src={"/logo3.png"} className="animate-pulseScale" width={40} height={40} alt="ameii"></Image>
-            </div>
+           
             <div className="absolute top-[11px] left-0">
               {/* Bolinha 1 */}
               <div

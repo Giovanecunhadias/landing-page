@@ -6,6 +6,12 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   output: 'standalone',
+  images:{
+    domains: ["framerusercontent.com"],
+  },
+  
+  
+
 };
 
 export default nextConfig;
