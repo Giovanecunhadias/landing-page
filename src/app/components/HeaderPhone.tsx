@@ -15,8 +15,8 @@ export function HeaderPhone() {
       <Image
       src={'https://framerusercontent.com/images/mFl5E44fiCWgJcpa9EXaSVb6Zw.png'}
      fill={false}
-     width={windowWidth * 0.9}
-     height={windowHeight * 0.7}
+     width={windowWidth * 0.8 }
+     height={windowHeight * 0.1}
       quality={100}
       alt='imagem'
       />
@@ -26,7 +26,7 @@ export function HeaderPhone() {
       
         
         
-        <div style={{bottom: windowHeight * 0.3}}  className={`hidden lg:flex absolute top-[40%]  flex-col items-center w-full gap-[0.75rem]   -translate-x-1/2   left-2/4 `} >
+        <div style={{bottom: windowHeight * 0.3}}  className={`hidden lg:flex absolute top-[40%]  flex-col items-center w-5/6 gap-[0.75rem]   -translate-x-1/2   left-2/4 `} >
           <HeaderPhoneNotificationOne />
           <HeaderPhoneNotificationTwo />
         </div>
