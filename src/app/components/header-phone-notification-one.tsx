@@ -8,7 +8,7 @@ export function HeaderPhoneNotificationOne() {
   const { windowWidth } = useWindowWidth();
 
   return (
-    <div className="lg:w-[21%] sm:w-2/6 w-5/6  md:w-[18%]  gap-3 inline-flex items-center bg-[#F1E1EF] py-2 pl-2 pr-4 rounded-[0.75rem] relative">
+    <div className="lg:w-[21%] sm:w-[40%] w-[75%]  md:w-2/6 gap-3 inline-flex items-center bg-[#F1E1EF] py-2 pl-2 pr-4 rounded-[0.75rem] relative">
       <div className="min-w-[3.25rem] flex justify-center items-center min-h-[3.25rem]">
         <Image
           src={"/favicon.ico"}
@@ -41,7 +41,7 @@ export function HeaderPhoneNotificationOne() {
                 "flex justify-center items-center w-[10.3125rem] h-[4.0625rem] rounded-xl z-10 py-1 px-4",
                 {
                   "bg-[#fff]": item.id === 1,
-                  "bg-[#01b169]": item.id === 2,
+                  "bg-[#0E33B5]": item.id === 2,
                   "bg-[#FFF]": item.id === 3,
                 }
               )}

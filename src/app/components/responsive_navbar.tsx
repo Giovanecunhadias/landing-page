@@ -57,7 +57,7 @@ export default function Nav({ isInView }: { isInView: boolean }) {
         </>
     )
     return(
-        <nav  className={` text-white w-full sticky z-20 h-[8vh] top-0 ${isInView ? "bg-[#1f073b]" : "bg-white"}`}>
+        <nav  className={` text-white w-full sticky z-20 h-fit top-0 ${isInView ? "bg-[#1f073b]" : "bg-white"}`}>
             <div className="max-w-7x1 mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex flex-row items-center w-full justify-between">
@@ -78,11 +78,7 @@ export default function Nav({ isInView }: { isInView: boolean }) {
                             </div>
                         </div>
                     </div>
-                    <div className="md:hidden">
-                        <button onClick={()=>{setIsOpen(!isOpen)}} type="button" className="fill-gray-100">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-align-justify"><path d="M3 12h18"/><path d="M3 18h18"/><path d="M3 6h18"/></svg>
-                        </button>
-                    </div>
+                
                 </div>
             </div>
             {

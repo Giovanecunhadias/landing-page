@@ -11,7 +11,7 @@ export function HeaderPhone() {
   const { windowHeight } = useWindowHeight()
   return (
     <>
-    <div className='hidden lg:flex lg:justify-center relative rounded-inherit w-full  h-fit min-h-fit  '>
+    <div className='hidden lg:flex   lg:justify-center relative rounded-inherit w-full   h-fit min-h-fit  '>
       <Image
       src={'https://framerusercontent.com/images/mFl5E44fiCWgJcpa9EXaSVb6Zw.png'}
      fill={false}
@@ -26,7 +26,7 @@ export function HeaderPhone() {
       
         
         
-        <div style={{bottom: windowHeight * 0.3}}  className={`hidden lg:flex absolute   flex-col items-center w-full gap-[0.75rem]   -translate-x-1/2   left-2/4 `} >
+        <div style={{bottom: windowHeight * 0.3}}  className={`hidden lg:flex absolute top-[40%]  flex-col items-center w-full gap-[0.75rem]   -translate-x-1/2   left-2/4 `} >
           <HeaderPhoneNotificationOne />
           <HeaderPhoneNotificationTwo />
         </div>
@@ -52,18 +52,26 @@ export function HeaderPhone() {
     </div> */}
    
   
-   <div className="lg:hidden  w-full h-[70vh] min-h-[70vh] ">
+   <div className="lg:hidden w-screen h-fit mt-5 justify-center items-end flex ">
+    <div className='flex flex-col  relative   h-[70vh] md:h-[80vh] w-[100%]   md:w-full'>
    <Image
       src="https://framerusercontent.com/images/mFl5E44fiCWgJcpa9EXaSVb6Zw.png"
       alt="Imagem"
-     className='absolute bottom-0'
-     
-      objectFit='contain'
+     className='absolute bottom-0 '
+      quality={100}
+      objectFit='cover'
       fill  
      // Isso ajusta automaticamente o tamanho
     />
+
+
+
+<div style={{bottom: windowHeight * 0.3}}  className={`lg:hidden flex absolute   flex-col items-center w-full gap-[0.75rem] top-[35%]  -translate-x-1/2   left-2/4 `} >
+          <HeaderPhoneNotificationOne />
+          <HeaderPhoneNotificationTwo />
+        </div>
     </div>
-    
+    </div>
     
    
     

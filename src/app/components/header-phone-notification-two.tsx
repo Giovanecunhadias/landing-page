@@ -8,7 +8,7 @@ export function HeaderPhoneNotificationTwo() {
   const { windowWidth } = useWindowWidth();
 
   return (
-    <div className="lg:w-[21%] sm:w-2/6 w-5/6  md:w-[18%] gap-3 inline-flex items-center bg-[#F1E1EF] py-2 pl-2 pr-4 rounded-[0.75rem] relative">
+    <div className="lg:w-[21%] sm:w-[40%] w-[75%]  md:w-2/6 gap-3 inline-flex items-center bg-[#F1E1EF] py-2 pl-2 pr-4 rounded-[0.75rem] relative">
       <div className="min-w-[3.25rem] flex justify-center items-center min-h-[3.25rem]">
         <Image
           src={"/favicon.ico"}

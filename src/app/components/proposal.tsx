@@ -2,12 +2,16 @@ import RotatingTextIcon from "./logo-com-texto-rodando";
 export default function Proposal() {
     return (
         <>
-            <div className="bg-[#1f073b] relative flex flex-col justify-center items-center text-center p-6 md:p-12">
+            <div className="bg-[#1f073b] relative flex flex-col  justify-center h-screen items-center text-center p-6 md:p-12">
+
+                    <div className="bg-[#3D124D]/50 min-w-[250px] left-0 lg:block hidden rounded-tr-full rounded-tl-xl bottom-0 absolute min-h-[70vh]"></div>
+
+                    <div className="bg-[#3D124D]/60 min-w-[250px] right-0 lg:block hidden rounded-bl-full rounded-br-xl top-0 absolute min-h-[70vh]"></div>
                 <div className="flex flex-col items-center">
                     <RotatingTextIcon/>
                 </div>
                 <div className="flex flex-col items-center text-center">
-                    <h2 className="text-3xl md:text-5xl text-white font-faktum leading-snug md:leading-tight">
+                    <h2 className="text-3xl lg:w-4/6 md:text-5xl text-white font-faktum leading-snug md:leading-tight">
                         E aí, que tal simplificar processos fiscais da sua empresa?
                     </h2>
                     

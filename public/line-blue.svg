@@ -1,1 +1,16 @@
-<svg viewBox="0 0 482 208" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="482" height="208" fill="none" id="svg454529741_832"><path d="M.58 0v80c0 11.369 7.588 20.965 17.976 24C8.168 107.035.579 116.631.579 128v80h2v-80c0-12.703 10.298-23 23-23h182.186c-8.929 3.815-15.186 12.677-15.186 23v80h2v-80c0-12.703 10.298-23 23-23h182.186c-8.929 3.815-15.186 12.677-15.186 23v80h2v-80c0-12.703 10.298-23 23-23h72v-2h-72c-12.702 0-23-10.297-23-23V0h-2v80c0 10.323 6.257 19.185 15.186 23H217.579c-12.702 0-23-10.297-23-23V0h-2v80c0 10.323 6.257 19.185 15.186 23H25.579c-12.702 0-23-10.297-23-23V0h-2Z" fill="url(&quot;#svg454529741_832_a&quot;)"></path><defs><linearGradient id="svg454529741_832_a" x1="91.413" y1="208" x2="91.413" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#5FC2EE" stop-opacity="0"></stop><stop offset=".52" stop-color="#5FC2EE"></stop><stop offset="1" stop-color="#5FC2EE" stop-opacity="0"></stop></linearGradient><linearGradient id="svg454529741_832_a" x1="91.413" y1="208" x2="91.413" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#5FC2EE" stop-opacity="0"></stop><stop offset=".52" stop-color="#5FC2EE"></stop><stop offset="1" stop-color="#5FC2EE" stop-opacity="0"></stop></linearGradient></defs></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482 208" width="482" height="208">
+  <defs>
+    <!-- Gradiente de cor -->
+    <linearGradient id="zigzagGradient" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#5FC2EE" stop-opacity="0" />
+      <stop offset="50%" stop-color="#5FC2EE" />
+      <stop offset="100%" stop-color="#5FC2EE" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Padrão ziguezague -->
+    <path id="zigzagPattern" d="M0,0 C60,20 40,60 100,80 C150,100 120,150 180,180 C240,210 220,160 280,140 C340,120 300,80 360,60 C420,40 380,0 440,0" fill="none" stroke="url(#zigzagGradient)" stroke-width="5"/>
+  </defs>
+
+  <!-- Usando o padrão de ziguezague -->
+  <use xlink:href="#zigzagPattern" />
+</svg>
