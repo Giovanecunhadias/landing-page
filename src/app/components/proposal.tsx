@@ -12,7 +12,7 @@ export default function Proposal() {
         </div>
         <div className="flex flex-col items-center text-center">
           <h2 className="text-3xl lg:w-4/6 md:text-5xl text-white font-faktum leading-snug md:leading-tight">
-            E aí, que tal simplificar processos fiscais da sua empresa?
+            E aí, que tal melhorar a experiência de compra de seus clientes?
           </h2>
         </div>
 
