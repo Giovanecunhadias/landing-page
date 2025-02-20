@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function YeverLines() {
     return(
         <div className="py-6">
-            <div className="relative lg:w-fit w-[45vh]">
+            <div className="relative lg:w-fit w-[366px]">
             <Image width={850} height={490} src={"/yever_lines.svg"} alt="image_lines" className="lg:w-[850px] invisible lg:h-[490px] w-[300px] h-[200px]" style={{zIndex: -1}}></Image>
             <div
             className="w-3 h-3 bg-[#3D8DD9] rounded-full absolute lg:top-[50%] lg:left-[15%] top-[52%] left-[5%] animate-bolinha-left opacity-70 shadow-bolinha-blue"
