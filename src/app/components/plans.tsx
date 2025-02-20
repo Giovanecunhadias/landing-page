@@ -1,5 +1,6 @@
 "use client";
 import { Sparkle, Check, MoveRight, Undo2, X } from "lucide-react";
+import Link from "next/link";
 
 export default function Plans() {
   return (
@@ -31,19 +32,17 @@ export default function Plans() {
             { text: "Taxa de adesão grátis", available: true },
             { text: "+ de 30 Integrações", available: true },
             { text: "Teste A/B", available: false },
+            { text: "Retentativa Transparente", available: true },
             { text: "Suporte à Dropshipping", available: true },
-            { text: "Fechamento mensal", available: true },
+            { text: "Fechamento mensal (auto)", available: true },
+
             {
-              text: "Cadastro de CNPJ com preenchimento automático.",
-              available: true,
-            },
-            {
-              text: "Importação de vendas retroativas (máx. 500)",
+              text: "Importação de vendas retroativas",
               available: true,
             },
             { text: "Suporte via WhatsApp, chat e e-mail", available: true },
             { text: "Acesso à API", available: false },
-            { text: "Onboarding assistido", available: false },
+            { text: "Multi Gerenciamento", available: false },
             {
               text: "Atendimento prioritário com especialista",
               available: false,
@@ -61,25 +60,21 @@ export default function Plans() {
           features={[
             { text: "Taxa de adesão grátis", available: true },
             { text: "+ de 30 Integrações", available: true },
-            { text: "Split de vendas fiscais", available: true },
+            { text: "Teste A/B", available: true },
+            { text: "Retentativa Transparente", available: true },
             { text: "Suporte à Dropshipping", available: true },
-            { text: "Fechamento mensal", available: true },
+            { text: "Fechamento mensal (auto)", available: true },
             {
-              text: "Cadastro de CNPJ com preenchimento automático.",
-              available: true,
-            },
-            {
-              text: "Importação de vendas retroativas (máx 1.000)",
+              text: "Importação de vendas retroativas",
               available: true,
             },
             { text: "Suporte via WhatsApp, chat e e-mail", available: true },
             { text: "Acesso à API", available: true },
-            { text: "Onboarding assistido", available: false },
+            { text: "Multi Gerenciamento", available: true },
             {
               text: "Atendimento prioritário com especialista",
-              available: false,
+              available: true,
             },
-           
           ]}
           isMostSold={true}
         />
@@ -94,25 +89,21 @@ export default function Plans() {
           features={[
             { text: "Taxa de adesão grátis", available: true },
             { text: "+ de 30 Integrações", available: true },
-            { text: "Split de vendas fiscais", available: true },
+            { text: "Teste A/B", available: true },
+            { text: "Retentativa Transparente", available: true },
             { text: "Suporte à Dropshipping", available: true },
-            { text: "Fechamento mensal", available: true },
+            { text: "Fechamento mensal (auto)", available: true },
             {
-              text: "Cadastro de CNPJ com preenchimento automático.",
-              available: true,
-            },
-            {
-              text: "Importação de vendas retroativas (máx. 500)",
+              text: "Importação de vendas retroativas",
               available: true,
             },
             { text: "Suporte via WhatsApp, chat e e-mail", available: true },
             { text: "Acesso à API", available: true },
-            { text: "Onboarding assistido", available: true },
+            { text: "Multi Gerenciamento", available: true },
             {
               text: "Atendimento prioritário com especialista",
-              available: false,
+              available: true,
             },
-           
           ]}
         />
 
@@ -125,21 +116,17 @@ export default function Plans() {
           features={[
             { text: "Taxa de adesão grátis", available: true },
             { text: "+ de 30 Integrações", available: true },
-            { text: "Divisão entre coprodutores", available: true },
-            { text: "Split de vendas fiscais", available: true },
+            { text: "Teste A/B", available: true },
+            { text: "Retentativa Transparente", available: true },
             { text: "Suporte à Dropshipping", available: true },
             { text: "Fechamento mensal (auto)", available: true },
             {
-              text: "Cadastro de CNPJ com preenchimento automático",
-              available: true,
-            },
-            {
-              text: "Importação de vendas retroativas (ilimitado)",
+              text: "Importação de vendas retroativas",
               available: true,
             },
             { text: "Suporte via WhatsApp, chat e e-mail", available: true },
             { text: "Acesso à API", available: true },
-            { text: "Onboarding assistido", available: true },
+            { text: "Multi Gerenciamento", available: true },
             {
               text: "Atendimento prioritário com especialista",
               available: true,
@@ -246,9 +233,17 @@ function PlanCard({
           isEnterprise ? "" : "text-2xl md:text-3xl"
         } mb-2`}
       >
-        {!moth? isEnterprise ? price : `R$ ${price}` : isEnterprise ? price : `${price}`}
+        {!moth
+          ? isEnterprise
+            ? price
+            : `R$ ${price}`
+          : isEnterprise
+          ? price
+          : `${price}`}
         {}
-        {!isEnterprise && <span className="text-sm"> {moth? "" : "/mês"}</span>}
+        {!isEnterprise && (
+          <span className="text-sm"> {moth ? "" : "/mês"}</span>
+        )}
       </p>
       <p
         className={`${
@@ -277,6 +272,7 @@ function PlanCard({
         ))}
       </div>
       <div className="mt-auto">
+      <Link href={"https://app.ameii.com.br/register"}>
         <button
           className={`w-full ${
             isEnterprise
@@ -294,6 +290,7 @@ function PlanCard({
         <p className="text-[#1f073b] flex items-center justify-center text-sm mt-2">
           <Undo2 size={16} strokeWidth={1} className="mr-1" /> {downLabel}
         </p>
+      </Link>
       </div>
     </div>
   );

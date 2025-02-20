@@ -22,8 +22,8 @@ export default function Rodape() {
             />
             <p className="text-gray-500 justify-center mb-6 text-sm leading-relaxed">
               Minimizamos o trabalho operacional do seu negócio, conectando na
-              sua plataforma de pagamento e emitindo as vendas fiscais
-              automaticamente.
+              sua plataforma de pagamento garantindo uma experiência de compra
+              rápida e fluida.
             </p>
             <div className="flex gap-4">
               <Link
@@ -50,9 +50,9 @@ export default function Rodape() {
           {/* Navigation Sections */}
           <div className="lg:col-span-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* O Ameii Section */}
+              {/* A Ameii Section */}
               <div className="flex flex-col gap-2">
-                <h2 className={titleClasses}>O AMEII</h2>
+                <h2 className={titleClasses}>Sobre a Ameii</h2>
                 <nav className="flex flex-col gap-2">
                   <Link href="/" className={pClasses}>
                     Início
@@ -73,13 +73,13 @@ export default function Rodape() {
                     Depoimentos
                   </Link>
                   <Link
-                    href="/"
+                    href="https://app.ameii.com.br/login"
                     className="text-[#5fc2ee] hover:underline underline-offset-2 inline-flex items-center font-sm font-bold font-faktum"
                   >
                     Entrar <ArrowUpRight className="ml-1 h-4 w-4" />
                   </Link>
                   <Link
-                    href="/"
+                    href="https://app.ameii.com.br/register"
                     className="text-[#d93d8d] hover:underline underline-offset-2 inline-flex items-center font-sm font-bold font-faktum"
                   >
                     Comece agora <ArrowUpRight className="ml-1 h-4 w-4" />

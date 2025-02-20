@@ -424,7 +424,7 @@ export default function Performance() {
               </div>
             </div>
           </div>
-          <div className="bg-white rounded-xl border-2 p-4 flex flex-col items-center">
+          {/* <div className="bg-white rounded-xl border-2 p-4 flex flex-col items-center">
             <Image
               src="split.svg"
               ref={imageRefseven}
@@ -443,7 +443,7 @@ export default function Performance() {
             >
               Split de suas vendas.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
       {/*FALTANDO IMAGENS */}

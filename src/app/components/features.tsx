@@ -148,7 +148,7 @@ export default function Features() {
             </span>
           </div>
           <h2 className="font-faktum text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-            O Ameii entrega
+            A Ameii entrega
             <br />
             as <span className="text-[#d93d8d]">suas vendas</span>
             <br />e emite as vendas.
