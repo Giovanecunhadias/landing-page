@@ -3,7 +3,7 @@ import Image from 'next/image';
 import eduzz from '../assets/image/eduzz.png';
 import asaas from '../assets/image/ASAAS.png';
 import shopify from '../assets/image/shopify.png';
-import paguesafe from '../assets/image/paguesafe.jpeg';
+import expay from '../assets/image/expay.png';
 import azcend from '../assets/image/azcend.jpeg';
 import utmify from '../assets/image/utmify.png'
 import woocommerce from '../assets/image/woocommerce.webp'
@@ -86,7 +86,7 @@ export default function LinesFoots() {
           className='absolute bg-white rounded-xl px-6 py-7'
           style={{right: '65%',}}
           >
-            <Image src={paguesafe} alt='paguesafe' width={100} height={100}/>
+            <Image src={expay} alt='expay' width={100} height={100}/>
           </div>
           <div
           className='absolute bg-black rounded-xl px-6 py-7'
@@ -105,7 +105,7 @@ export default function LinesFoots() {
         <Image src={eduzz} alt='eduzz' width={150} height={100}/>
       </div>
       <div className='bg-white rounded-xl py-6 px-2'>
-        <Image src={paguesafe}  alt='paguesafe'/>
+        <Image src={expay}  alt='expay'/>
       </div>
       <div className='bg-white rounded-xl p-4'>
         <Image src={shopify} alt='shopify'/>

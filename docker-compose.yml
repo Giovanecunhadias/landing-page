@@ -1,21 +1,25 @@
+version: '3.8'
+
 services:
   web:
-    build: .
-    # ports:
-    #   - "4173:4173"
+    image: registry.gitlab.com/zumbidoalasca/lp:latest
     networks:
       - traefik_default
-    labels:
-      - traefik.enable=true
-      - traefik.http.routers.ameii-lp-main.rule=Host(`ameii.com.br`)
-      - traefik.http.routers.ameii-lp-main.entrypoints=websecure
-      - traefik.http.routers.ameii-lp-main.middlewares=cors-ameii-lp-main@docker
-      - traefik.http.routers.ameii-lp-main.tls.certresolver=letsencrypt
-      - traefik.http.routers.ameii-lp-main.service=ameii-lp-main
-      - traefik.http.services.ameii-lp-main.loadbalancer.server.port=3000
-      - traefik.http.middlewares.cors-ameii-lp-main.headers.customResponseHeaders.access-control-allow-origin=*
-      - traefik.http.middlewares.cors-ameii-lp-main.headers.customResponseHeaders.access-control-allow-credentials=true
+    deploy:
+      replicas: 1 
+      restart_policy:
+        condition: on-failure
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.ameii-lp-main321.rule=Host(`ameii.com.br`)
+        - traefik.http.routers.ameii-lp-main321.entrypoints=websecure
+        - traefik.http.routers.ameii-lp-main321.middlewares=cors-ameii-lp-main321@docker
+        - traefik.http.routers.ameii-lp-main321.tls.certresolver=myresolver
+        - traefik.http.routers.ameii-lp-main321.service=ameii-lp-main321
+        - traefik.http.services.ameii-lp-main321.loadbalancer.server.port=3000
+        - traefik.http.middlewares.cors-ameii-lp-main321.headers.accessControlAllowOrigin=*
+        - traefik.http.middlewares.cors-ameii-lp-main321.headers.accessControlAllowCredentials=true
 
 networks:
   traefik_default:
-    external: true
+    driver: overlay

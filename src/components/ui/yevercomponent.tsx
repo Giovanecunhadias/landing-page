@@ -1,5 +1,5 @@
-import AmeiiComponent from "./Ameii";
-import Ameiitwo from "./Ameiitwo";
+import AmeiiComponent from "./yever";
+import Ameiitwo from "./yevertwo";
 
 export default function AmeiiComponentFinal() {
   return (
